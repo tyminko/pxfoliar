@@ -18,6 +18,19 @@ export default defineNuxtConfig({
     }
   },
 
+  image: {
+    provider: 'imagekit',
+    imagekit: {
+      urlEndpoint: process.env.IMAGEKIT_URL_ENDPOINT || 'https://ik.imagekit.io/mxm',
+      baseURL: process.env.IMAGEKIT_URL_ENDPOINT || 'https://ik.imagekit.io/mxm'
+    },
+    presets: {
+      default: {
+        provider: 'imagekit',
+        sizes: 'sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw 2xl:100vw',
+      }
+    }
+  },
   // GitHub Pages configuration
   nitro: {
     preset: 'github_pages'

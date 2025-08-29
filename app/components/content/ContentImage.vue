@@ -21,18 +21,31 @@ const showPlaceholder = ref(true)
 const imgRef = useTemplateRef('imgRef')
 
 const $img = useImage()
-const provider = computed(() => props.provider ?? $img.options.provider)
-const preset = computed(() => props.preset ?? $img.options.presets?.default?.preset ?? 'default')
-const defaultSizes = computed(() => $img.options.presets?.[preset.value]?.sizes ?? 'sm:100vw md:100vw lg:100vw')
-const imageSizes = computed(() =>
-  $img.getSizes(props.src, {
-    sizes: defaultSizes.value,
-    width: props.width,
-    height: props.height,
-    preset: preset.value,
-    provider: provider.value,
-  })
-)
+
+// Simplified preset handling
+const preset = computed(() => {
+  if (props.preset) return props.preset
+  // Fallback to a simple preset or undefined
+  return undefined
+})
+
+const defaultSizes = computed(() => 'sm:100vw md:100vw lg:100vw')
+const imageSizes = computed(() => {
+  try {
+    return $img.getSizes(props.src, {
+      sizes: defaultSizes.value,
+      width: props.width,
+      height: props.height,
+      preset: preset.value,
+      provider: props.provider || $img.options.provider,
+    })
+  } catch (error) {
+    // Fallback to direct src if image processing fails
+    console.warn('Image processing failed, using direct src:', error)
+    return { src: props.src, srcset: undefined }
+  }
+})
+
 const resolvedSrc = computed(() => imageSizes.value.src)
 const resolvedSrcset = computed(() => imageSizes.value.srcset)
 
@@ -106,6 +119,7 @@ const sizes = computed(() => {
 function stringSize(s: string | number) {
   return (typeof s === 'number') ? `${s}px` : s
 }
+
 function checkImageLoaded() {
   if (imgRef.value?.complete && imgRef.value?.naturalWidth > 0) {
     isLoaded.value = true

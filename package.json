@@ -3,8 +3,10 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "clean:content": "rm -rf .data/content .nuxt",
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev:clean": "npm run clean:content && nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
