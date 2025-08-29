@@ -18,13 +18,5 @@ export default defineNuxtConfig({
   // GitHub Pages configuration
   nitro: {
     preset: 'github_pages'
-  },
-
-  // Ensure static generation
-  ssr: true,
-
-  // Output configuration for GitHub Pages
-  app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/' : '/'
   }
 })
