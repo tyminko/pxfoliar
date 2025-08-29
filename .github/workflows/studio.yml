@@ -59,7 +59,11 @@ jobs:
         run: ${{ steps.pkgman.outputs.package_manager }} install
 
       - name: Generate
-        run: ${{ steps.pkgman.outputs.package_manager }} run build
+        run: |
+          echo "Starting generate process..."
+          ${{ steps.pkgman.outputs.package_manager }} run generate
+          echo "Generate completed. Checking for output..."
+          ls -la || echo "No files in current directory"
         env:
           NITRO_PRESET: github_pages
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
