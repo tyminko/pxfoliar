@@ -8,5 +8,10 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/icon'
-  ]
+  ],
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio',
+    }
+  },
 })
