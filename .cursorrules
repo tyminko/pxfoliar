@@ -1,0 +1,57 @@
+# Cursor AI Rules for the Project
+
+## Project Overview
+This is a Nuxt 4 project with Vue 3, TypeScript, and Nuxt Content 3. All code should follow the ESLint configuration defined in `eslint.config.mjs`.
+
+## Code Style and Formatting Rules
+
+### ESLint Compliance
+- ALWAYS follow the ESLint rules defined in `eslint.config.mjs`
+- Pay special attention to Vue template formatting rules:
+  - Use 2-space indentation for HTML attributes
+  - Max 3 attributes per line for single-line elements
+  - For multiline elements: 1 attribute per line, first attribute on new line
+  - Proper closing bracket placement (never on new line for multiline)
+
+### Vue Component Standards
+- Use composition API with `<script setup>`
+- Prefer TypeScript over JavaScript
+- Use proper Vue 3 patterns and best practices
+- Follow the existing component structure in the project
+
+### File Structure
+- Components go in `app/components/`
+- Pages go in `app/pages/`
+- Content goes in `content/`
+- Server API routes go in `server/api/`
+- Utilities go in `app/utils/` or `utils/`
+
+### Naming Conventions
+- Vue components: PascalCase (e.g., `ProjectCard.vue`)
+- Files and directories: kebab-case
+- Variables and functions: camelCase
+- Constants: UPPER_SNAKE_CASE
+
+### Import and Dependencies
+- Use the existing dependencies listed in `package.json`
+- Prefer Nuxt auto-imports when available
+- Use relative imports for local components and utilities
+
+## Code Generation Guidelines
+- Always check existing code patterns before generating new code
+- Ensure generated code passes ESLint validation
+- Maintain consistency with existing component architecture
+- Include proper TypeScript types when applicable
+- Follow the project's existing CSS and styling approach
+
+## Quality Standards
+- Code must be production-ready
+- Include proper error handling
+- Write clear, self-documenting code
+- Follow accessibility best practices for Vue components
+- Ensure responsive design considerations
+
+## Testing and Validation
+- Run ESLint before considering code complete
+- Verify that generated code integrates properly with existing Nuxt/Vue setup
+- Test components in the context of the existing project structure
