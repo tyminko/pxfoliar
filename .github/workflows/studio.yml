@@ -63,7 +63,14 @@ jobs:
         env:
           NITRO_PRESET: github_pages
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
-          
+
+      - name: Debug - List output directory
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Listing .output directory:"
+          ls -la .output/ || echo ".output directory not found"
+          echo "Listing .output/public directory:"
+          ls -la .output/public/ || echo ".output/public directory not found"
 
       # Deployment job
       - name: Deploy 🚀
