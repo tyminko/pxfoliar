@@ -15,13 +15,14 @@ interface ParsedContextWithMinimark extends FileAfterParseHook {
     body?: MinimarkTree
   }
 }
-type ImgLikeNode = ['img' | 'img-caption' | 'imgCaption', MinimarkElement[1] & { src: string }, ...MinimarkNode[]]
+
+type ImgLikeNode = ['img' | 'im', MinimarkElement[1] & { src: string }, ...MinimarkNode[]]
 
 const imageDataCache = new Map<string, { width: number; height: number; localPath?: string; palette?: string[] }>()
 
 const publicDir = path.join(process.cwd(), 'public')
 // Use the same environment variable as Nuxt config
-const imagekitBaseEnv = process.env.IMAGEKIT_URL_ENDPOINT || 'https://ik.imagekit.io/dureika'
+const imagekitBaseEnv = process.env.IMAGEKIT_URL_ENDPOINT
 // Fallback for external repo testing (can be removed later)
 const publicRemoteBaseEnv = process.env.PUBLIC_ASSETS_BASE
 
@@ -33,11 +34,10 @@ export async function ContentAfterParseTransform(ctx: ParsedContextWithMinimark)
 
 async function transformNode(node: MinimarkNode): Promise<MinimarkNode> {
   if (!Array.isArray(node)) return node
-  /* DEBUG */
-  console.log(`%c %c node: `, 'background:#ffbb00;color:#000', 'color:#00aaff', node)
+  // if(node[0] === 'img-caption') {
+  //   console.log(`img-caption: `, JSON.stringify(node, null, 2))
+  // }
   const imgLike = imgLikeNode(node)
-  /* DEBUG */
-  console.log(`%c %c imgLike: `, 'background:#ffbb00;color:#000', 'color:#00aaff', imgLike)
     if (imgLike) {
     const [_, attrs, ...children] = imgLike
     const imageData = await getImageData(attrs.src, 4)
@@ -51,8 +51,10 @@ async function transformNode(node: MinimarkNode): Promise<MinimarkNode> {
       ? [captionStr as MinimarkNode]
       : children
     const title = attrs.title || attrs.caption || textContent(imgLike)
+    /* DEBUG */
+    console.log(`${attrs.src}`, JSON.stringify(imageData, null, 2))
     return [
-      'ImgCaption',
+      'ContentImage',
       {
         ...attrs,
         src: imageData?.localPath || attrs.src,
@@ -223,17 +225,85 @@ function rgbToHex(r: number, g: number, b: number): string {
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`
 }
 
+type ImgCaptionNode = [
+  'img-caption',
+  MinimarkElement[1],
+  ['template', { 'v-slot:img': string }, MinimarkNode],
+  ['template', { 'v-slot:caption': string }, MinimarkNode]
+]
+
 function imgLikeNode(node: MinimarkNode): ImgLikeNode | null {
   if (!Array.isArray(node)) return null
   const [tag, attrs = {}, ...children] = node
-  if ((tag === 'img' || tag === 'img-caption') && attrs.src) {
+  if ((tag === 'img') && attrs.src) {
     return node as ImgLikeNode
+  }
+  if (tag === 'img-caption') {
+    return convertImgCaptionToImgLike(node as ImgCaptionNode)
   }
   if (tag === 'p' && children?.length === 1) {
     const imgLikeChild = imgLikeNode(children[0] as MinimarkNode)
     if (imgLikeChild) return imgLikeChild
   }
   return null
+}
+
+function findImgInNode(node: MinimarkNode): ImgLikeNode | null {
+  if (!Array.isArray(node)) return null
+  const [tag, attrs = {}, ...children] = node
+  if ((tag === 'img') && attrs.src) {
+    return node as ImgLikeNode
+  }
+  for (const child of children) {
+    const imgChild = findImgInNode(child)
+    if (imgChild) return imgChild
+  }
+  return null
+}
+
+function convertImgCaptionToImgLike(node: ImgCaptionNode): ImgLikeNode | null {
+  if (!Array.isArray(node) || node[0] !== 'img-caption') return null
+  const [_, attrs = {}, ...children] = node
+
+  const slots = children.reduce<{ img?: ImgLikeNode | null; caption?: MinimarkNode }>((acc, child) => {
+    if (Array.isArray(child) && child[0] === 'template') {
+      const slotName = Object.keys(child[1] || {})[0]
+      if (slotName === 'v-slot:img') {
+        acc.img = findImgInNode(child[2])
+      } else if (slotName === 'v-slot:caption') {
+        acc.caption = child[2]
+      }
+    }
+    return acc
+  }, { })
+
+  if (!slots.img) return null
+  const [_tag, imgAttrs] = slots.img
+  const src = imgAttrs?.src
+  if (!src) return null
+
+  // Handle caption content safely - extract content from p element or use directly
+  const captionNodes: MinimarkNode[] = []
+  if (slots.caption) {
+    if (Array.isArray(slots.caption)) {
+      const [tag, _attrs, ...captionChildren] = slots.caption as MinimarkNode[]
+      if (tag === 'p' && captionChildren.length > 0) {
+        captionNodes.push(...captionChildren)
+      } else {
+        // If it's not a p element, use the whole array as caption
+        captionNodes.push(slots.caption as MinimarkNode)
+      }
+    } else {
+      // If it's a string or other node, use it directly
+      captionNodes.push(slots.caption as MinimarkNode)
+    }
+  }
+
+  return [
+    'img',
+    { ...attrs, src } as MinimarkElement[1] & { src: string },
+    ...captionNodes
+  ] as ImgLikeNode
 }
 
 function stripQuery(url: string) {
