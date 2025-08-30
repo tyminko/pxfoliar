@@ -4,8 +4,7 @@
 
 инсталляция 180x150x30 cм, фотография на ткани, стенная роспись, трафаретная печать
 
-::content-image
-![whats-app-image-2025-08-14-at-21.54.55-1.jpeg](/whats-app-image-2025-08-14-at-21.54.55-1.jpeg)
+::content-image{src="/whats-app-image-2025-08-14-at-21.54.55-1.jpeg"}
 «Belarusian avant-garde», галерея “Amfilada”, Щетин, Польша
 ::
 
