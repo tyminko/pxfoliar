@@ -1,3 +1,8 @@
-<script lang="ts">
-export { default } from '../ContentImage.vue'
-</script>
+<template>
+  <figure>
+    <slot />
+    <figcaption v-if="$slots.default">
+      <slot name="caption" mdc-unwrap="p" />
+    </figcaption>
+  </figure>
+</template>
