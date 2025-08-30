@@ -18,7 +18,7 @@ Dasdasdsad *Kasad* **asdasdasd**
 ![](/whats-app-image-2025-08-14-at-21.54.55-2.jpeg)
 ::
 
-![whats-app-image-2025-08-14-at-21.54.55-1.jpeg](/whats-app-image-2025-08-14-at-21.54.55-1.jpeg, "Olllaaa-la-la")
+![whats-app-image-2025-08-14-at-21.54.55-1.jpeg](/whats-app-image-2025-08-14-at-21.54.55-3.jpeg "Olllaaa-la-la")
 
 всякий раз за входом
 
