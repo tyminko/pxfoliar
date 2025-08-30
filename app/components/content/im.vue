@@ -1,3 +1,3 @@
 <script lang="ts">
-export { default } from './ContentImage.vue'
+export { default } from '../ContentImage.vue'
 </script>
