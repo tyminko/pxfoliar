@@ -15,7 +15,7 @@ interface ParsedContextWithMinimark extends FileAfterParseHook {
     body?: MinimarkTree
   }
 }
-type ImgLikeNode = ['img' | 'im', MinimarkElement[1] & { src: string }, ...MinimarkNode[]]
+type ImgLikeNode = ['img' | 'img-caption' | 'imgCaption', MinimarkElement[1] & { src: string }, ...MinimarkNode[]]
 
 const imageDataCache = new Map<string, { width: number; height: number; localPath?: string; palette?: string[] }>()
 
@@ -33,7 +33,11 @@ export async function ContentAfterParseTransform(ctx: ParsedContextWithMinimark)
 
 async function transformNode(node: MinimarkNode): Promise<MinimarkNode> {
   if (!Array.isArray(node)) return node
+  /* DEBUG */
+  console.log(`%c %c node: `, 'background:#ffbb00;color:#000', 'color:#00aaff', node)
   const imgLike = imgLikeNode(node)
+  /* DEBUG */
+  console.log(`%c %c imgLike: `, 'background:#ffbb00;color:#000', 'color:#00aaff', imgLike)
     if (imgLike) {
     const [_, attrs, ...children] = imgLike
     const imageData = await getImageData(attrs.src, 4)
@@ -222,7 +226,7 @@ function rgbToHex(r: number, g: number, b: number): string {
 function imgLikeNode(node: MinimarkNode): ImgLikeNode | null {
   if (!Array.isArray(node)) return null
   const [tag, attrs = {}, ...children] = node
-  if ((tag === 'img' || tag === 'im') && attrs.src) {
+  if ((tag === 'img' || tag === 'img-caption') && attrs.src) {
     return node as ImgLikeNode
   }
   if (tag === 'p' && children?.length === 1) {
