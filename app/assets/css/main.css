@@ -1,0 +1,11 @@
+/* Main CSS file for Nuxt application */
+
+/* Define layer order - earlier layers have lower specificity */
+@layer reset, frameworks, base, components, utilities;
+
+/* Import files directly into their respective layers */
+@import './layers/reset.css' layer(reset);
+@import './layers/base.css' layer(base);
+@import './layers/components.css' layer(components);
+@import './layers/utilities.css' layer(utilities);
+@import './layers/frameworks.css' layer(frameworks);

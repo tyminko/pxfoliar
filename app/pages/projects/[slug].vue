@@ -26,16 +26,10 @@ useSeoMeta({
 
 <template>
   <div class="project-page">
-    <header class="project-header">
-      <h1 v-if="project">{{ project.title }}</h1>
-    </header>
-
-    <main class="project-content">
-      <ContentRenderer v-if="project" :value="project" />
-    </main>
+    <ContentRenderer v-if="project" :value="project" />
   </div>
 </template>
 
 <style scoped>
-
+  
 </style>

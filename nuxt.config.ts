@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon'
   ],
+  css: ['~/assets/css/main.css'],
   content: {
     preview: {
       api: 'https://api.nuxt.studio',
