@@ -6,7 +6,7 @@ seo:
 title: «Академия Искусства, Академия Жизни» / «Academy of Arts, Academy of Life»
 ---
 
-## «Академия Искусства, Академия Жизни» / «Academy of Arts, Academy of Life»
+## Academy of Arts, Academy of Life
 
 1997
 

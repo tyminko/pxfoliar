@@ -144,7 +144,7 @@ function checkImageLoaded() {
 <style scoped>
 .image-wrap {
   position: relative;
-  width: min(100%, 100vh * var(--ar));
+  width: min(100%, var(--size-img-max-h, 100vh) * var(--ar));
   aspect-ratio: var(--ar, auto);
 
   &.show-placeholder::before {
@@ -156,31 +156,31 @@ function checkImageLoaded() {
     transition: opacity var(--trans-dur) ease-in-out;
     transition-delay: var(--placeholder-delay);
     /* Placeholder gradient 4 x 4 */
-    --gr-r: 50%; /* a point gradient radius */
-    --gr-c: 20%; /* a point inner radius of solid color */
-    --gr-c1: 0%; /* a point inner radius of solid color. special case for central points */
+    --gr-rad: 50%; /* a point gradient radius */
+    --gr-in-rad: 20%; /* a point inner radius of solid color */
+    --gr-in-rad1: 0%; /* a point inner radius of solid color. special case for central points */
     background:
       /* central 2x2 points, drawn on top of the other gradients */
-      radial-gradient(ellipse at 33.33% 33.33%, var(--c5) var(--gr-c1), transparent var(--gr-r)),
-      radial-gradient(ellipse at 66.66% 33.33%, var(--c6) var(--gr-c1), transparent var(--gr-r)),
-      radial-gradient(ellipse at 33.33% 66.66%, var(--c9) var(--gr-c1), transparent var(--gr-r)),
-      radial-gradient(ellipse at 66.66% 66.66%, var(--c10) var(--gr-c1), transparent var(--gr-r)),
+      radial-gradient(ellipse at 33.33% 33.33%, var(--c5) var(--gr-in-rad1), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 66.66% 33.33%, var(--c6) var(--gr-in-rad1), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 33.33% 66.66%, var(--c9) var(--gr-in-rad1), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 66.66% 66.66%, var(--c10) var(--gr-in-rad1), transparent var(--gr-rad)),
       /* top row points */
-      radial-gradient(ellipse at 0 0, var(--c0) var(--gr-c), transparent var(--gr-r)),
-      radial-gradient(ellipse at 33.33% 0, var(--c1) var(--gr-c), transparent var(--gr-r)),
-      radial-gradient(ellipse at 66.66% 0, var(--c2) var(--gr-c), transparent var(--gr-r)),
-      radial-gradient(ellipse at 100% 0, var(--c3) var(--gr-c), transparent var(--gr-r)),
+      radial-gradient(ellipse at 0 0, var(--c0) var(--gr-in-rad), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 33.33% 0, var(--c1) var(--gr-in-rad), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 66.66% 0, var(--c2) var(--gr-in-rad), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 100% 0, var(--c3) var(--gr-in-rad), transparent var(--gr-rad)),
       /* second row edge points */
-      radial-gradient(ellipse at 0 33.33%, var(--c4) var(--gr-c), transparent var(--gr-r)),
-      radial-gradient(ellipse at 100% 33.33%, var(--c7) var(--gr-c), transparent var(--gr-r)),
+      radial-gradient(ellipse at 0 33.33%, var(--c4) var(--gr-in-rad), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 100% 33.33%, var(--c7) var(--gr-in-rad), transparent var(--gr-rad)),
       /* third row edge points */
-      radial-gradient(ellipse at 0 66.66%, var(--c8) var(--gr-c), transparent var(--gr-r)),
-      radial-gradient(ellipse at 100% 66.66%, var(--c11) var(--gr-c), transparent var(--gr-r)),
+      radial-gradient(ellipse at 0 66.66%, var(--c8) var(--gr-in-rad), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 100% 66.66%, var(--c11) var(--gr-in-rad), transparent var(--gr-rad)),
       /* bottom row points */
-      radial-gradient(ellipse at 0 100%, var(--c12) var(--gr-c), transparent var(--gr-r)),
-      radial-gradient(ellipse at 33.33% 100%, var(--c13) var(--gr-c), transparent var(--gr-r)),
-      radial-gradient(ellipse at 66.66% 100%, var(--c14) var(--gr-c), transparent var(--gr-r)),
-      radial-gradient(ellipse at 100% 100%, var(--c15) var(--gr-c), transparent var(--gr-r));
+      radial-gradient(ellipse at 0 100%, var(--c12) var(--gr-in-rad), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 33.33% 100%, var(--c13) var(--gr-in-rad), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 66.66% 100%, var(--c14) var(--gr-in-rad), transparent var(--gr-rad)),
+      radial-gradient(ellipse at 100% 100%, var(--c15) var(--gr-in-rad), transparent var(--gr-rad));
   }
 
   img {

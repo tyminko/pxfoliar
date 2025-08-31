@@ -1,9 +1,19 @@
 /* Base layer - foundational styles */
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --font-family: 'Victor Mono', monospace;
+}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; */
   color: #333;
   background-color: #fff;
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-variation-settings: "wght" 400;
+  font-style: normal;
+  font-size: 14px;
 }
 
 /* Typography */
@@ -14,7 +24,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
@@ -47,49 +57,30 @@ p {
 
 /* Links */
 a {
-  color: #007bff;
-}
-
-a:hover {
+  --_color: #007bff;
+  color: var(--_color);
+  font-variation-settings: "wght" 300;
   text-decoration: underline;
+  text-underline-offset: 0em;
+  text-decoration-thickness: 0.3em;
+  text-decoration-skip-ink: none;
+  /* text-decoration-thickness: 0em; */
+  text-decoration-color: transparent;
+  transition:
+    font-variation-settings 0.3s ease,
+    text-decoration-thickness 0.3s ease,
+    text-decoration-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    font-variation-settings: "wght" 700;
+    text-decoration-color: color-mix(in lab, var(--_color), transparent 85%);
+  }
 }
 
 /* Portfolio Base Styles */
 
-/* Main content */
 main {
-  padding: 2rem 0;
-}
-
-/* Grid layout */
-.grid {
-  display: grid;
-  gap: 2rem;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-@media (max-width: 768px) {
-  .grid-cols-2,
-  .grid-cols-3 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .grid-cols-3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 figure {

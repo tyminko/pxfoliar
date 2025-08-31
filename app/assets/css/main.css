@@ -5,7 +5,8 @@
 
 /* Import files directly into their respective layers */
 @import './layers/reset.css' layer(reset);
+@import './layers/frameworks.css' layer(frameworks);
 @import './layers/base.css' layer(base);
 @import './layers/components.css' layer(components);
 @import './layers/utilities.css' layer(utilities);
-@import './layers/frameworks.css' layer(frameworks);
+@import './theme.css';

@@ -51,8 +51,6 @@ async function transformNode(node: MinimarkNode): Promise<MinimarkNode> {
       ? [captionStr as MinimarkNode]
       : children
     const title = attrs.title || attrs.caption || textContent(imgLike)
-    /* DEBUG */
-    console.log(`${attrs.src}`, JSON.stringify(imageData, null, 2))
     return [
       'ContentImage',
       {
