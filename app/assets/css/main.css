@@ -1,7 +1,5 @@
 @layer reset, frameworks, base, components, utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap') layer(base);
-
 @import './layers/reset.css' layer(reset);
 @import './layers/base.css' layer(base);
 @import './layers/components.css' layer(components);
