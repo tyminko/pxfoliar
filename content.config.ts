@@ -9,6 +9,10 @@ export default defineContentConfig({
         title: z.string().optional(),
         draft: z.boolean().default(false).optional(),
         year: z.string().optional(),
+        image: z.object({
+          src: z.string().editor({ input: 'media' }),
+          alt: z.string(),
+        }).optional(),
       }),
     }),
   },
