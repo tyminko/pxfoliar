@@ -13,7 +13,10 @@ export default defineContentConfig({
           src: z.string().editor({ input: 'media' }),
           alt: z.string(),
         }).optional(),
-        slug: z.string().optional(),
+        credits: z.array(z.object({
+          role: z.string().default('author'),
+          name: z.string().default('Andrei Dureika'),
+        })).optional(),
       }),
     }),
   },
