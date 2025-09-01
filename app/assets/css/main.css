@@ -1,9 +1,7 @@
-/* Main CSS file for Nuxt application */
-
-/* Define layer order - earlier layers have lower specificity */
 @layer reset, frameworks, base, components, utilities;
 
-/* Import files directly into their respective layers */
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap') layer(base);
+
 @import './layers/reset.css' layer(reset);
 @import './layers/frameworks.css' layer(frameworks);
 @import './layers/base.css' layer(base);
