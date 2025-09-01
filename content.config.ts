@@ -5,7 +5,11 @@ export default defineContentConfig({
     projects: defineCollection({
       type: 'page',
       source: 'projects/*.md',
-      schema: z.object({}),
+      schema: z.object({
+        title: z.string().optional(),
+        draft: z.boolean().default(false).optional(),
+        year: z.string().optional(),
+      }),
     }),
   },
 })
