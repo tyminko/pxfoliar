@@ -22,7 +22,7 @@ const sortedProjects = computed(() => {
 :root {
   --size-img-max-h: calc(100dvh - var(--size-base));
 }
-@layer base {
+@layer components {
   .app-wrap {
     display: grid;
     grid-template-columns: auto 1fr;
