@@ -1,1 +1,0 @@
-import{_ as o,c as r,o as s,s as n}from"./CgrEfR2L.js";const t={};function c(e,a){return s(),r("strong",null,[n(e.$slots,"default")])}const l=Object.assign(o(t,[["render",c]]),{__name:"ProseStrong"});export{l as default};
