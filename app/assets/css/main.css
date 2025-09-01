@@ -1,8 +1,8 @@
-@layer reset, base, components, utilities;
+@layer reset, basic, components, utilities;
 
 @import './layers/reset.css' layer(reset);
 /* @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap') layer(base); */
 @import './theme.css';
-@import './layers/base.css' layer(base);
+@import './layers/base.css' layer(basic);
 @import './layers/components.css' layer(components);
 @import './layers/utilities.css' layer(utilities);
