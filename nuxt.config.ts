@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     head: {
       style: [
         {
-          innerHTML: '@layer reset, bazuca, components, utilities;'
+          innerHTML: '@layer reset, base, components, utilities;'
         }
       ]
     }
