@@ -9,4 +9,5 @@ credits:
 
 # AAAA page
 
-/
+::work-info
+::
