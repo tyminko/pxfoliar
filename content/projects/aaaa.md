@@ -10,4 +10,7 @@ credits:
 # AAAA page
 
 ::work-info
+# Work Title
+
+technic and material | years too | some deteiles
 ::
