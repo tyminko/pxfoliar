@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   content: {
     preview: {
-      // api: 'https://api.nuxt.studio'
+      api: 'https://api.nuxt.studio'
     }
   },
 
