@@ -14,9 +14,15 @@ export default defineNuxtConfig({
   ],
   css: ['~/assets/css/main.css'],
   content: {
-    preview: {
-      api: 'https://api.nuxt.studio',
-    }
+    // Only enable preview mode in development or when explicitly enabled via environment variable
+    ...(process.env.NODE_ENV === 'development' || process.env.NUXT_CONTENT_PREVIEW === 'true'
+      ? {
+          preview: {
+            api: 'https://api.nuxt.studio',
+          }
+        }
+      : {}
+    )
   },
 
   image: {
