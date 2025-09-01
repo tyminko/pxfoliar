@@ -23,6 +23,8 @@ export default defineNuxtConfig({
     '@nuxt/icon'
   ],
   css: ['~/assets/css/main.css'],
+  // Use default auto-registration; Studio discovery handled via hook below
+  components: true,
   content: {
     preview: {
       api: 'https://api.nuxt.studio'
@@ -49,6 +51,17 @@ export default defineNuxtConfig({
   hooks: {
     async 'content:file:afterParse'(ctx: FileAfterParseHook) {
       await ContentAfterParseTransform(ctx)
+    },
+    'components:extend': (components) => {
+      // Ensure Studio indexes custom content components
+      const isContentComponent = (c: { filePath?: string }) =>
+        (typeof c.filePath === 'string') && (
+          c.filePath.includes('/components/content/') ||
+          c.filePath.includes('/app/components/content/')
+        )
+      components
+        .filter(isContentComponent)
+        .forEach((c) => { c.global = true })
     }
   }
 })

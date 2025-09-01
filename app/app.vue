@@ -5,7 +5,7 @@ const { data: projects } = await useAsyncData('all-projects', () =>
     .all()
 )
 const sortedProjects = computed(() => {
-  return [...(projects.value ?? [])].sort((a, b) => a.title.localeCompare(b.title, undefined, { numeric: true }))
+  return [...(projects.value ?? [])].sort((a, b) => (a.title ?? '').localeCompare(b.title ?? '', undefined, { numeric: true }))
 })
 </script>
 
