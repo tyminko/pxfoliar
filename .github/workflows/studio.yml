@@ -65,14 +65,14 @@ jobs:
           echo "Node version: $(node --version)"
           echo "NPM version: $(npm --version)"
           echo "Package manager: ${{ steps.pkgman.outputs.package_manager }}"
-          
+
           # Run build with verbose output
           ${{ steps.pkgman.outputs.package_manager }} run build --verbose || echo "Build command failed"
-          
+
           echo "Build completed. Checking for output..."
           echo "Current directory contents:"
           ls -la || echo "No files in current directory"
-          
+
           echo "Checking for .output directory:"
           if [ -d ".output" ]; then
             echo ".output directory exists"
@@ -80,7 +80,7 @@ jobs:
           else
             echo ".output directory does not exist"
           fi
-          
+
           echo "Checking for dist directory:"
           if [ -d "dist" ]; then
             echo "dist directory exists"
@@ -90,7 +90,6 @@ jobs:
           fi
         env:
           NITRO_PRESET: github_pages
-          NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
 
       - name: Debug - List output directory
         run: |
