@@ -86,4 +86,19 @@ main {
 figure {
   display: inline-block;
   margin: 0 var(--padding-base, 1rem) var(--padding-base, 1rem) 0;
+  @media (max-width: 768px) {
+    margin: 0 0 var(--padding-base, 1rem) 0;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--padding-sm);
+  min-width: var(--size-base);
+  min-height: var(--size-base);
+  padding-inline: var(--padding-sm);
 }
