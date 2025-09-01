@@ -1,10 +1,3 @@
----
-navigation:
-  title: «Академия Искусства, Академия Жизни» / «Academy of Arts, Academy of Life»
-seo:
-  title: «Академия Искусства, Академия Жизни» / «Academy of Arts, Academy of Life»
-title: «Академия Искусства, Академия Жизни» / «Academy of Arts, Academy of Life»
----
 
 ## Academy of Arts, Academy of Life
 
