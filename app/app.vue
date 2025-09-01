@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: projects } = await useAsyncData('all-projects', () =>
-  queryCollection('content')
+  queryCollection('projects')
     .where('path', 'LIKE', '/projects/%')
     .all()
 )
