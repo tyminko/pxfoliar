@@ -6,16 +6,16 @@ export default defineContentConfig({
       type: 'page',
       source: 'projects/*.md',
       schema: z.object({
-        draft: z.boolean().default(false),
-        year: z.string(),
+        draft: z.boolean().default(false).optional(),
+        year: z.string().optional(),
         image: z.object({
-          src: z.string().editor({ input: 'media' }),
-          alt: z.string(),
+          src: z.string().editor({ input: 'media' }).optional(),
+          alt: z.string().optional(),
         }),
         slug: z.string().editor({ hidden: true }),
         credits: z.array(z.object({
-          role: z.string().default('author'),
-          name: z.string().default('Andrei Dureika'),
+          role: z.string().default('author').optional(),
+          name: z.string().default('Andrei Dureika').optional(),
         })),
       }),
     }),
