@@ -52,16 +52,16 @@ export default defineNuxtConfig({
     async 'content:file:afterParse'(ctx: FileAfterParseHook) {
       await ContentAfterParseTransform(ctx)
     },
-    'components:extend': (components) => {
-      // Ensure Studio indexes custom content components
-      const isContentComponent = (c: { filePath?: string }) =>
-        (typeof c.filePath === 'string') && (
-          c.filePath.includes('/components/content/') ||
-          c.filePath.includes('/app/components/content/')
-        )
-      components
-        .filter(isContentComponent)
-        .forEach((c) => { c.global = true })
-    }
+    // 'components:extend': (components) => {
+    //   // Ensure Studio indexes custom content components
+    //   const isContentComponent = (c: { filePath?: string }) =>
+    //     (typeof c.filePath === 'string') && (
+    //       c.filePath.includes('/components/content/') ||
+    //       c.filePath.includes('/app/components/content/')
+    //     )
+    //   components
+    //     .filter(isContentComponent)
+    //     .forEach((c) => { c.global = true })
+    // }
   }
 })
