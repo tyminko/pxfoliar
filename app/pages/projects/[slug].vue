@@ -4,7 +4,7 @@ const slug = route.params.slug as string
 
 // Fetch the specific project
 const { data: project } = await useAsyncData(`project-${slug}`, () =>
-  queryCollection('content')
+  queryCollection('projects')
     .where('path', '=', `/projects/${slug}`)
     .first()
 )
@@ -31,5 +31,5 @@ useSeoMeta({
 </template>
 
 <style scoped>
-  
+
 </style>
