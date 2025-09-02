@@ -32,4 +32,5 @@ asdasdasdasd asdasd asdasdas dasdas
 
 ::img-caption
 #img
+![whats-app-image-2025-08-14-at-21.54.55.jpeg](/whats-app-image-2025-08-14-at-21.54.55.jpeg)
 ::
