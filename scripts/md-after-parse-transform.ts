@@ -27,7 +27,11 @@ const imagekitBaseEnv = process.env.IMAGEKIT_URL_ENDPOINT
 const publicRemoteBaseEnv = process.env.PUBLIC_ASSETS_BASE
 
 export async function ContentAfterParseTransform(ctx: ParsedContextWithMinimark) {
+  /* DEBUG */
+  console.log(`<<<<>>>> ctx: `, ctx)
   const { content } = ctx
+  /* DEBUG */
+  console.log(`>>>> content: `, JSON.stringify(content, null, 2))
   if (!content.body || content.body.type !== 'minimark') return
   content.body.value = await Promise.all(content.body.value.map(transformNode))
 }

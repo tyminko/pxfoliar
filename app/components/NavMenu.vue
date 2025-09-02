@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { ContentCollectionItem } from '@nuxt/content';
+import type { ProjectsCollectionItem } from '@nuxt/content'
 
 const { projects } = defineProps<{
-  projects: ContentCollectionItem[]
+  projects: ProjectsCollectionItem[]
 }>()
 
 const route = useRoute()
@@ -50,6 +50,12 @@ onUnmounted(() => {
         class="project-card">
         <div>{{ project.title }}</div>
         <div v-if="project.description">{{ project.description }}</div>
+        <ContentImage
+          v-if="project.image?.src"
+          :src="project.image.src"
+          :width="50"
+          :height="50"
+          aspect-ratio="1/1" />
       </NuxtLink>
     </nav>
   </div>

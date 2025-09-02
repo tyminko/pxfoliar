@@ -156,7 +156,7 @@ function checkImageLoaded() {
 <style scoped>
 .image-wrap {
   position: relative;
-  width: min(100%, 100vh * var(--ar));
+  width: min(100%, var(--size-img-max-h, 100vh) * var(--ar));
   aspect-ratio: var(--ar, auto);
 
   &.show-placeholder::before {
