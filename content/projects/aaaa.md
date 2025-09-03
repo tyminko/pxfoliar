@@ -4,7 +4,7 @@ description: Стенная роспись 198 x 28,7(193) cm, черная кр
   Militar!” / галерея “Aircraft” / Братислава / Словакия
 year: 2010
 image:
-  src: /whats-app-image-2025-08-14-at-21.54.55-3.jpeg
+  src: /whats-app-image-2025-08-14-at-21.54.55.jpeg
   palette: []
 credits:
   - role: author
