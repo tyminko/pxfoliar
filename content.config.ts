@@ -13,7 +13,7 @@ export default defineContentConfig({
           src: z.string().editor({ input: 'media' }),
           alt: z.string(),
         }),
-        slug: z.string().editor({ hidden: true }),
+        hohoho: z.string().editor({ hidden: true }),
         icon: z.string().optional().editor({ input: 'icon' }),
         authors: z.array(z.object({
           slug: z.string(),
