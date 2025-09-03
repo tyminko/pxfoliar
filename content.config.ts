@@ -6,7 +6,7 @@ const imageSchema = z.object({
   width: z.number().optional(),
   height: z.number().optional(),
   aspectRatio: z.number().optional(),
-  palette: z.string().editor({ hidden: true }),
+  palette: z.string(),
 })
 
 const creditSchema = z.object({
