@@ -1,17 +1,16 @@
 ---
+title: Work Title In Table
+description: Стенная роспись 198 x 28,7(193) cm, черная краска “Alla Gloria
+  Militar!” / галерея “Aircraft” / Братислава / Словакия
+year: 2010
 image:
   src: /whats-app-image-2025-08-14-at-21.54.55-3.jpeg
   palette: []
-draft: true
 credits:
   - role: author
     name: Andrei Dureika
-  - {}
-title: Work Title In Table
-description: technic and material | years too | some deteiles
-navigation:
-  title: ""
-year: "2020"
+  - role: assistent
+    name: Arkady Bronstein
 ---
 
 ::work-info
@@ -23,6 +22,9 @@ technic and material | years too | some deteiles
 ::img-caption
 #img
 ![whats-app-image-2025-08-14-at-21.54.55.jpeg](/whats-app-image-2025-08-14-at-21.54.55.jpeg)
+
+#caption
+артефакт, фотография 70х100см
 ::
 
-![whats-app-image-2025-08-14-at-21.54.55-3.jpeg](/whats-app-image-2025-08-14-at-21.54.55-3.jpeg)
+![whats-app-image-2025-08-14-at-21.54.55-3.jpeg](/whats-app-image-2025-08-14-at-21.54.55-3.jpeg, "“Alla Gloria Militar!” / галерея “Aircraft” / Братислава / Словакия")
