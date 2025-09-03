@@ -1,1 +1,0 @@
-import{_ as a,d as o,e as s,S as n,h as t}from"./37NBN8Yq.js";const r={};function c(e,i){return s(),o("figure",null,[n(e.$slots,"img"),t("figcaption",null,[n(e.$slots,"caption")])])}const _=Object.assign(a(r,[["render",c]]),{__name:"ImgCaption"});export{_ as default};
