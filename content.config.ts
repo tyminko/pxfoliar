@@ -35,10 +35,11 @@ export const collections = {
     type: 'page',
     source: 'events/*.md',
     schema: baseEntrySchema.extend({
-      startDate: z.date(),
-      endDate: z.date().optional(),
+      startDate: z.string(),
+      endDate: z.string().optional(),
     }),
   }),
 }
+// .editor({ hidden: true })
 // export default defineContentConfig({
 // })
