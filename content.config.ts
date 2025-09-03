@@ -35,8 +35,8 @@ export const collections = {
     type: 'page',
     source: 'events/*.md',
     schema: baseEntrySchema.extend({
-      startDate: z.string(),
-      endDate: z.string().optional(),
+      startDate: z.date(),
+      endDate: z.date().optional(),
     }),
   }),
 }
