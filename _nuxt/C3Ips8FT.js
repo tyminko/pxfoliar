@@ -1,1 +1,0 @@
-import{_ as o,d as s,e as n,Q as r}from"./CFfoa22J.js";const t={},c={class:"work-info"};function a(e,_){return n(),s("div",c,[r(e.$slots,"default")])}const d=Object.assign(o(t,[["render",a]]),{__name:"WorkInfo"});export{d as default};
