@@ -19,6 +19,7 @@ const creditSchema = z.object({
 const baseEntrySchema = z.object({
   title: z.string(),
   draft: z.boolean().default(false).optional(),
+  description: z.string().optional(),
   image: imageSchema.optional(),
   credits: z.array(creditSchema).optional(),
 })
