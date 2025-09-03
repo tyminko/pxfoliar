@@ -3,7 +3,10 @@ import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 // Shared schemas
 const imageSchema = z.object({
   src: z.string().editor({ input: 'media' }),
-  palette: z.array(z.string()).optional(),
+  width: z.number().editor({ hidden: true }),
+  height: z.number().editor({ hidden: true }),
+  aspectRatio: z.number().editor({ hidden: true }),
+  palette: z.string().editor({ hidden: true }),
 })
 
 const creditSchema = z.object({

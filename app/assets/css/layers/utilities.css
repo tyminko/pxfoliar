@@ -1,4 +1,8 @@
 /* Utilities layer - utility classes */
+.desc {
+  font-size: 80%;
+  opacity: 0.7;
+}
 
 /* Text alignment */
 .text-center {

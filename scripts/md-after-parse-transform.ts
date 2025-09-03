@@ -10,15 +10,25 @@ import { textContent } from 'minimark'
 import Jimp from 'jimp'
 // import { ColorActionName } from '@jimp/plugin-color'
 
+type FrontmatterWithImage = {
+  image?: {
+    src: string
+    palette?: string
+    width?: number
+    height?: number
+    aspectRatio?: number
+  }
+}
+
 interface ParsedContextWithMinimark extends FileAfterParseHook {
-  content: ParsedContentFile & {
+  content: ParsedContentFile & FrontmatterWithImage & {
     body?: MinimarkTree
   }
 }
 
 type ImgLikeNode = ['img' | 'im', MinimarkElement[1] & { src: string }, ...MinimarkNode[]]
 
-const imageDataCache = new Map<string, { width: number; height: number; localPath?: string; palette?: string[] }>()
+const imageDataCache = new Map<string, { width: number; height: number; localPath?: string; palette?: string }>()
 
 const publicDir = path.join(process.cwd(), 'public')
 // Use the same environment variable as Nuxt config
@@ -27,11 +37,20 @@ const imagekitBaseEnv = process.env.IMAGEKIT_URL_ENDPOINT
 const publicRemoteBaseEnv = process.env.PUBLIC_ASSETS_BASE
 
 export async function ContentAfterParseTransform(ctx: ParsedContextWithMinimark) {
-  /* DEBUG */
-  console.log(`<<<<>>>> ctx: `, ctx)
   const { content } = ctx
-  /* DEBUG */
-  console.log(`>>>> content: `, JSON.stringify(content, null, 2))
+  // 1) Update frontmatter image metadata (used for social/poster) separately from body images
+  if (content.image?.src) {
+    const meta = await getImageData(content.image.src, 4)
+    if (meta?.width && meta?.height) {
+      content.image.width = meta.width
+      content.image.height = meta.height
+      content.image.aspectRatio = meta.width / meta.height
+    }
+    if (meta?.palette && meta.palette.length > 0) {
+      content.image.palette = meta.palette
+    }
+  }
+  // 2) Transform inline/body images in Minimark body
   if (!content.body || content.body.type !== 'minimark') return
   content.body.value = await Promise.all(content.body.value.map(transformNode))
 }
@@ -46,10 +65,6 @@ async function transformNode(node: MinimarkNode): Promise<MinimarkNode> {
     const [_, attrs, ...children] = imgLike
     const imageData = await getImageData(attrs.src, 4)
     const aspectRatio = imageData ? imageData.width / imageData.height : undefined
-    let paletteVars: string | undefined
-    if (imageData?.palette && imageData.palette.length === 16) {
-      paletteVars = imageData.palette.map((hex, i) => `--c${i}:${hex}`).join(';')
-    }
     const captionStr = attrs.caption || attrs.title || ''
     const captionNodes = (children.length === 0 && captionStr)
       ? [captionStr as MinimarkNode]
@@ -64,7 +79,9 @@ async function transformNode(node: MinimarkNode): Promise<MinimarkNode> {
         height: imageData?.height,
         aspectRatio,
         title,
-        ...(paletteVars ? { style: paletteVars } : {}),
+        ...(imageData?.palette && imageData.palette.length > 0 ? {
+          palette: imageData.palette
+        } : {}),
       },
       ...captionNodes
     ]
@@ -74,7 +91,7 @@ async function transformNode(node: MinimarkNode): Promise<MinimarkNode> {
   return [tag, attrs, ...newChildren]
 }
 
-async function getImageData(src: string, grid: 3 | 4 = 4): Promise<{ width: number; height: number; localPath?: string; palette?: string[] } | undefined> {
+async function getImageData(src: string, grid: 3 | 4 = 4): Promise<{ width: number; height: number; localPath?: string; palette?: string } | undefined> {
   if (!src) return undefined
   if (imageDataCache.has(src)) return imageDataCache.get(src)
   const resolved = await resolveImageUrl(src)
@@ -105,7 +122,7 @@ async function getImageData(src: string, grid: 3 | 4 = 4): Promise<{ width: numb
       width,
       height,
       localPath: resolved.localPath,
-      palette
+      palette: palette.join(',')
     }
     imageDataCache.set(src, result)
     return result

@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import type { ProjectsCollectionItem } from '@nuxt/content'
+import type { ProjectsCollectionItem, EventsCollectionItem } from '@nuxt/content'
 
 const { projects } = defineProps<{
   projects: ProjectsCollectionItem[]
+  events: EventsCollectionItem[]
 }>()
 
 const route = useRoute()
@@ -49,13 +50,16 @@ onUnmounted(() => {
         :to="project.path"
         class="project-card">
         <div>{{ project.title }}</div>
-        <div v-if="project.description">{{ project.description }}</div>
-        <ContentImage
+        <div v-if="project.description" class="desc">{{ project.description }}</div>
+        <MediaImage
           v-if="project.image?.src"
           :src="project.image.src"
-          :width="50"
-          :height="50"
-          aspect-ratio="1/1" />
+          :max-width="50"
+          :max-height="50"
+          :palette="project.image.palette"
+          crop
+          aspect-ratio="1/1"
+          class="project-image" />
       </NuxtLink>
     </nav>
   </div>
@@ -105,5 +109,32 @@ onUnmounted(() => {
       }
     }
   }
+
+  .project-card {
+    position: relative;
+    display: block;
+
+    .project-image {
+      --size: calc(var(--size-base) * 2);
+      width: var(--size);
+      height: var(--size);
+      overflow: clip;
+      mask-image: radial-gradient(circle, black 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      position: absolute;
+      top: 50%;
+      translate: 0 -50%;
+      left: calc(100% - var(--size) * 0.25);
+      z-index: 1;
+    }
+
+    &:hover {
+      .project-image {
+        opacity: 1;
+      }
+    }
+  }
+
 }
 </style>
