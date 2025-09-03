@@ -3,12 +3,10 @@ import { defineCollection, z } from '@nuxt/content'
 // Shared schemas
 const imageSchema = z.object({
   src: z.string().editor({ input: 'media' }),
-  // Computed fields are optional so drafts without transforms still validate
-  width: z.number().editor({ hidden: true }).optional(),
-  height: z.number().editor({ hidden: true }).optional(),
-  aspectRatio: z.number().editor({ hidden: true }).optional(),
-  // Accept palette as a comma string or array (Studio may write [])
-  palette: z.union([z.string(), z.array(z.string())]).optional().editor({ hidden: true }),
+  width: z.number().optional(),
+  height: z.number().optional(),
+  aspectRatio: z.number().optional(),
+  palette: z.string().optional(),
 })
 
 const creditSchema = z.object({
@@ -37,8 +35,8 @@ export const collections = {
     type: 'page',
     source: 'events/*.md',
     schema: baseEntrySchema.extend({
-      startDate: z.coerce.date(),
-      endDate: z.coerce.date().optional(),
+      startDate: z.date(),
+      endDate: z.date().optional(),
     }),
   }),
 }
