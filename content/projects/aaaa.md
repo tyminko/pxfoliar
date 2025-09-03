@@ -1,6 +1,7 @@
 ---
 image:
   src: /whats-app-image-2025-08-14-at-21.54.55-3.jpeg
+  palette: []
 draft: true
 credits:
   - role: author
@@ -17,20 +18,11 @@ year: "2020"
 # Work Title
 
 technic and material | years too | some deteiles
-
-  :::img-caption
-  :::
-::
-
-::img-caption
-#img
-![1-y4-a1552.jpg](/1-y4-a1552.jpg)
-
-#caption
-asdasdasdasd asdasd asdasdas dasdas
 ::
 
 ::img-caption
 #img
 ![whats-app-image-2025-08-14-at-21.54.55.jpeg](/whats-app-image-2025-08-14-at-21.54.55.jpeg)
 ::
+
+![whats-app-image-2025-08-14-at-21.54.55-3.jpeg](/whats-app-image-2025-08-14-at-21.54.55-3.jpeg)
