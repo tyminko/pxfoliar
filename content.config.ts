@@ -1,4 +1,4 @@
-import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { defineCollection, z } from '@nuxt/content'
 
 // Shared schemas
 const imageSchema = z.object({
@@ -24,23 +24,23 @@ const baseEntrySchema = z.object({
   credits: z.array(creditSchema).optional(),
 })
 
-export default defineContentConfig({
-  collections: {
-    projects: defineCollection({
-      type: 'page',
-      source: 'projects/*.md',
-      schema: baseEntrySchema.extend({
-        year: z.string().optional(),
-      }),
+export const collections = {
+  projects: defineCollection({
+    type: 'page',
+    source: 'projects/*.md',
+    schema: baseEntrySchema.extend({
+      year: z.string().optional(),
     }),
+  }),
 
-    events: defineCollection({
-      type: 'page',
-      source: 'events/*.md',
-      schema: baseEntrySchema.extend({
-        startDate: z.coerce.date(),
-        endDate: z.coerce.date().optional(),
-      }),
+  events: defineCollection({
+    type: 'page',
+    source: 'events/*.md',
+    schema: baseEntrySchema.extend({
+      startDate: z.coerce.date(),
+      endDate: z.coerce.date().optional(),
     }),
-  },
-})
+  }),
+}
+// export default defineContentConfig({
+// })
