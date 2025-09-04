@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ProjectsCollectionItem, EventsCollectionItem } from '@nuxt/content'
 
-const { projects } = defineProps<{
+const { projects, events } = defineProps<{
   projects: ProjectsCollectionItem[]
   events: EventsCollectionItem[]
 }>()
@@ -9,6 +9,8 @@ const { projects } = defineProps<{
 const route = useRoute()
 const isNavOpen = ref(false)
 const navContainer = useTemplateRef('navContainer')
+const isEventsOpen = ref(false)
+const isProjectsOpen = ref(false)
 
 watch(() => route.fullPath, () => {
   setTimeout(() => {
@@ -44,34 +46,25 @@ onUnmounted(() => {
       <NuxtLink to="/" class="logo">
         <div>Andrei Dureika</div>
       </NuxtLink>
-      <NuxtLink
-        v-for="project in projects"
-        :key="project.path"
-        :to="project.path"
-        class="project-card">
-        <div>{{ project.title }}</div>
-        <div v-if="project.description" class="desc">{{ project.description }}</div>
-        <MediaImage
-          v-if="project.image?.src"
-          :src="project.image.src"
-          :max-width="50"
-          :max-height="50"
-          :palette="project.image.palette"
-          crop
-          aspect-ratio="1/1"
-          class="project-image" />
-      </NuxtLink>
+      <button v-if="projects.length > 0" class="toggle-projects" @mousedown="isProjectsOpen = !isProjectsOpen">
+        Works
+      </button>
+      <NavMenuItem v-for="project in projects" :key="project.path" :item="project" />
+      <button v-if="events.length > 0" class="toggle-events" @mousedown="isEventsOpen = !isEventsOpen">
+        Events
+      </button>
+      <NavMenuItem v-for="event in events" :key="event.path" :item="event" />
     </nav>
   </div>
 </template>
 
 <style scoped>
 .nav-container {
-  position: relative;
   grid-column: 1;
   grid-row: 1;
-  z-index: 100;
-
+  /* container-type: inline-size; */
+  position: relative;
+  z-index: 1000;
 
   .toggle-nav {
     position: fixed;
@@ -86,11 +79,15 @@ onUnmounted(() => {
     position: sticky;
     top: 0;
     height: fit-content;
-    padding: 1rem;
-    display: grid;
+    /* padding: var(--padding-base); */
+    /* display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0; */
     background-color: var(--color-bg);
+
+    > * {
+      padding-block: var(--padding-sm);
+    }
   }
 
   @media (max-width: 768px) {
@@ -106,32 +103,6 @@ onUnmounted(() => {
 
       &.open {
         left: 0;
-      }
-    }
-  }
-
-  .project-card {
-    position: relative;
-    display: block;
-
-    .project-image {
-      --size: calc(var(--size-base) * 2);
-      width: var(--size);
-      height: var(--size);
-      overflow: clip;
-      mask-image: radial-gradient(circle, black 0%, transparent 50%);
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      position: absolute;
-      top: 50%;
-      translate: 0 -50%;
-      left: calc(100% - var(--size) * 0.25);
-      z-index: 1;
-    }
-
-    &:hover {
-      .project-image {
-        opacity: 1;
       }
     }
   }

@@ -7,5 +7,14 @@
 
   --color-text: #303030;
   --color-bg: #fff;
-  --color-accent: #000;
+  --color-accent: #005EFF;
+
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-h5: 1rem;
+  --font-size-h6: 0.875rem;
+
+  accent-color: var(--color-accent);
 }

@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon'
   ],
+
   css: ['~/assets/css/main.css'],
   // Use default auto-registration; Studio discovery handled via hook below
   components: true,
@@ -44,10 +45,11 @@ export default defineNuxtConfig({
       }
     }
   },
-  // GitHub Pages configuration
+
   nitro: {
     preset: 'github_pages'
   },
+
   hooks: {
     async 'content:file:afterParse'(ctx: FileAfterParseHook) {
       await ContentAfterParseTransform(ctx)

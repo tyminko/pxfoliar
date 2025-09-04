@@ -21,11 +21,14 @@ const props = defineProps<{
 <template>
   <figure>
     <MediaImage v-bind="props"/>
-    <figcaption v-if="$slots.default">
+    <figcaption v-if="$slots.default" class="desc">
       <slot mdc-unwrap="p" />
     </figcaption>
   </figure>
 </template>
 
 <style scoped>
+figcaption {
+  margin-top: var(--padding-xs);
+}
 </style>
