@@ -4,12 +4,14 @@ description: Free Belarus Museum, Warsaw, PL
 startDate: 2024-08-06T00:00:00.000Z
 endDate: 2024-08-31T00:00:00.000Z
 image:
-  src:
+  src: /pu-exhibition.jpg
 credits:
   - role: author / curator
     name: Andrei Dureika
   - role: participants
-    name: Aleś Puškin, Rufina Bazlova (Stitchit), Alexander Vasyukovich, Andrei Dureyka, Ijalanta Kiliyani, Yanak Kouzel, Maxim Tyminko, Antoś Cieleżnik, Yana Shostak, Roman Schell.
+    name: Aleś Puškin, Rufina Bazlova (Stitchit), Alexander Vasyukovich, Andrei
+      Dureyka, Ijalanta Kiliyani, Yanak Kouzel, Maxim Tyminko, Antoś Cieleżnik,
+      Yana Shostak, Roman Schell.
 ---
 
 The exhibition "Ales Pushkin. AFTERLIFE" will open on August 6 at 19:00 at the Museum of Free Belarus in Warsaw.
