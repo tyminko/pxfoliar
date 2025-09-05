@@ -1,9 +1,11 @@
 ---
 credits: []
 draft: false
+title: AD DA
+description: Privet internet!
 ---
 
-![24-11-06-IMG-10047.jpg](/24-11-06-img-10047.jpg)
+![](/24-11-06-img-10047.jpg "caption sfdsdfsdf sdfsdf sd fsd fsds")
 
 ***Lorem ipsum*** (/ˌlɔː.rəm ˈɪp.səm/ *LOR-əm IP-səm*) is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting.
 
