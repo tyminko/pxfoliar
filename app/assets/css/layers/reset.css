@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  line-height: 1.4;
+  line-height: var(--line-height-body, 1.4);
 }
 
 h1,

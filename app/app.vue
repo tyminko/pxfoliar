@@ -15,6 +15,10 @@ const sortedProjects = computed(() => {
 const sortedEvents = computed(() => {
   return [...(events.value ?? [])].sort((a, b) => (a.startDate ?? '').localeCompare(b.startDate ?? '', undefined, { numeric: true }))
 })
+//
+onMounted(() => {
+  
+})
 </script>
 
 <template>
@@ -28,7 +32,14 @@ const sortedEvents = computed(() => {
 
 <style>
 :root {
-  --size-img-max-h: calc(100dvh - var(--size-base));
+  --header-h-margin: var(--padding-xs);
+  --header-h: calc(
+    var(--font-size-h4) * var(--line-height-header) -
+    var(--header-h-margin) -
+    var(--font-size-desc) * var(--line-height-body) -
+    var(--padding-base) * 2
+  );
+  --size-img-max-h: calc(100dvh - var(--header-h) - var(--padding-lg));
 }
 @layer base {
   .app-wrap {

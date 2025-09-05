@@ -10,7 +10,8 @@ body {
   font-optical-sizing: auto;
   font-variation-settings: "wght" 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: var(--font-size-body, 14px);
+  line-height: var(--line-height-body, 1.4);
 }
 
 /* Typography */
@@ -22,7 +23,7 @@ h5,
 h6 {
   margin-bottom: 1rem;
   font-variation-settings: "wght" 500;
-  line-height: 1.2;
+  line-height: var(--line-height-header, 1.2);
 }
 
 h1 {
@@ -88,13 +89,16 @@ button {
   min-width: var(--size-base);
   min-height: var(--size-base);
   padding-inline: var(--padding-sm);
+  color: inherit;
 }
 
-a, button {
+a,
+button {
   &:hover {
     position: relative;
     /* color: var(--color-bg); */
     z-index: 1;
+
     &::after {
       --_c: color-mix(in oklch, currentColor, transparent 93%);
       content: '';

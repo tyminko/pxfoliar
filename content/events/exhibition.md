@@ -14,6 +14,8 @@ credits:
       Yana Shostak, Roman Schell.
 ---
 
+![Exhibition poster](/pu-exhibition.jpg "Exhibition poster ©AD")
+
 The exhibition "Ales Pushkin. AFTERLIFE" will open on August 6 at 19:00 at the Museum of Free Belarus in Warsaw.
 
 This date is not accidental: on the artist's birthday, despite his violent death, which occurred a year ago in a Hrodna prison.
