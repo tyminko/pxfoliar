@@ -205,7 +205,7 @@ const scrollToStickyHeader = async (event: MouseEvent) => {
       padding-inline: var(--padding-base);
     }
 
-    a {
+    a:not(:active, .router-link-exact-active) {
       color: var(--color-text);
       &:hover {
         color: var(--color-accent-1);

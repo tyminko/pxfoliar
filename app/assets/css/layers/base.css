@@ -64,14 +64,7 @@ a {
   /* text-decoration-skip-ink: none; */
   /* text-decoration-thickness: 0em; */
   /* text-decoration-color: transparent; */
-  transition:
-    color 0.3s ease;
-
-  &:hover {
-    /* font-variation-settings: "wght" 700; */
-    /* text-decoration-color: color-mix(in lab, var(--_color), transparent 85%); */
-    /* text-decoration: underline; */
-  }
+  transition: color 0.3s ease;
 }
 
 figure {
@@ -94,7 +87,7 @@ button {
 
 a,
 button {
-  &:hover {
+  &:hover, &:focus-visible, &:active {
     position: relative;
     /* color: var(--color-bg); */
     z-index: 1;
@@ -107,8 +100,13 @@ button {
       border-radius: 8px;
       background-color: var(--_c);
       box-shadow: 0 0 5px 3px var(--_c);
-      mix-blend-mode: multiply;
-      /* z-index: -1; */
+      z-index: -1;
+    }
+  }
+  &:active {
+    color: var(--color-bg);
+    &::after {
+      --_c: var(--color-accent);
     }
   }
 }

@@ -40,6 +40,11 @@ export const collections = {
       ...baseEntrySchema,
     }),
   }),
+  pages: defineCollection({
+    type: 'page',
+    source: '*.md',
+    schema: z.object({...baseEntrySchema}),
+  }),
 }
 // .editor({ hidden: true })
 // export default defineContentConfig({

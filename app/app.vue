@@ -1,23 +1,59 @@
 <script setup lang="ts">
-const { data: projects } = await useAsyncData('all-projects', () =>
+import type { ProjectsCollectionItem, EventsCollectionItem } from '@nuxt/content'
+const route = useRoute()
+const { data: projects } = await useAsyncData<ProjectsCollectionItem[]>('all-projects', () =>
   queryCollection('projects')
     .where('path', 'LIKE', '/projects/%')
     .all()
 )
-const { data: events } = await useAsyncData('all-events', () =>
+const { data: events } = await useAsyncData<EventsCollectionItem[]>('all-events', () =>
   queryCollection('events')
     .where('path', 'LIKE', '/events/%')
     .all()
 )
-const sortedProjects = computed(() => {
-  return [...(projects.value ?? [])].sort((a, b) => (a.title ?? '').localeCompare(b.title ?? '', undefined, { numeric: true }))
+const sortedProjects = computed<ProjectsCollectionItem[]>(() => {
+  return [...(projects.value ?? [])].sort((a, b) => {
+    const aPath = a.path.split('/').pop() ?? ''
+    const bPath = b.path.split('/').pop() ?? ''
+    return aPath.localeCompare(bPath, undefined, { numeric: true })
+  })
 })
-const sortedEvents = computed(() => {
-  return [...(events.value ?? [])].sort((a, b) => (a.startDate ?? '').localeCompare(b.startDate ?? '', undefined, { numeric: true }))
+const sortedEvents = computed<EventsCollectionItem[]>(() => {
+  const toTimestamp = (value?: string): number => {
+    if (!value) return Number.POSITIVE_INFINITY
+    const time = new Date(value).getTime()
+    return Number.isNaN(time) ? Number.POSITIVE_INFINITY : time
+  }
+  const getEventTime = (event: EventsCollectionItem): number => {
+    const start = toTimestamp(event.startDate)
+    if (Number.isFinite(start)) return start
+    return toTimestamp(event.endDate)
+  }
+  return [...(events.value ?? [])].sort((a, b) => getEventTime(a) - getEventTime(b))
 })
-//
-onMounted(() => {
-  
+const nextPostRoute = computed<string | null>(() => {
+  const currentPath = route.path
+  // Only handle these sections; otherwise return null
+  if (!/^\/(projects|events|publications)\//.test(currentPath)) return null
+  const combined: Array<{ path: string }> = [
+    ...((sortedProjects.value ?? []) as Array<{ path: string }>),
+    ...((sortedEvents.value ?? []) as Array<{ path: string }>),
+    // Add publications when available
+  ]
+  if (combined.length === 0) return null
+  const currentIndex = combined.findIndex(item => item.path === currentPath)
+  if (currentIndex === -1) return null
+  const nextIndex = (currentIndex + 1) % combined.length
+  const nextItem = combined[nextIndex]
+  return nextItem?.path ?? null
+})
+
+const curColorClass = computed(() => {
+  const currentPath = route.path
+  if (currentPath.startsWith('/projects/')) return 'ac-1'
+  if (currentPath.startsWith('/events/')) return 'ac-2'
+  if (currentPath.startsWith('/publications/')) return 'ac-3'
+  return ''
 })
 </script>
 
@@ -25,8 +61,18 @@ onMounted(() => {
   <div class="app-wrap">
     <NavMenu :projects="sortedProjects" :events="sortedEvents" />
     <main>
-      <NuxtPage />
+      <NuxtPage :class="curColorClass"/>
     </main>
+    <footer>
+      <NuxtLink
+        v-if="nextPostRoute"
+        :to="nextPostRoute"
+        class="next-post-link"
+        :class="curColorClass"
+        :title="nextPostRoute.replace(/^\/|\/$/g, '')">
+        <Icon name="grommet-icons:next" />
+      </NuxtLink>
+    </footer>
   </div>
 </template>
 
@@ -60,6 +106,26 @@ onMounted(() => {
       @media (max-width: 768px) {
         /* padding-top: var(--size-base); */
       }
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 100;
+      .next-post-link {
+        display: flex;
+        width: var(--size-base);
+        height: var(--size-base);
+        background-color: var(--color-background);
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: var(--color-bg);
+        &::after {
+          border-radius: inherit;
+        }
+      }
+
     }
   }
 }
