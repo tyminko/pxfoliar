@@ -52,125 +52,84 @@ Lectures and workshops at NYU Berlin, Gerrit Rietveld Academie Amsterdam, Europe
 
 ## Selected Exhibitions
 
-### 2025
+- ### 2025
+  - Weltkunstzimmer, Dusseldorf, DE, *Charity Projekt EU UA* (co-curated antiwarcoalition space)
 
-Weltkunstzimmer, Dusseldorf, DE, *Charity Projekt EU UA* (co-curated antiwarcoalition space)
+- ### 2024
+  - Free Belarus Museum, Warsaw, PL, *Ales Pushkin AFTERLIFE*
 
-- 2024
-- Free Belarus Museum, Warsaw, PL, *Ales Pushkin AFTERLIFE*
-- 2020
+- ### 2020
   - Y gallery (Ў), Minsk, BY, *Touching Distance* 
   - PuntWG, Amsterdam, NL, *Not LESS-MATERIAL* in frame of *A Matter of (In)digestions* festival
   - Arti et Amicitiae, Amsterdam, NL, *BELARUS // ART OF RESISTANCE (+ co-curator)*
   - ROZENSTRAAT – a rose is a rose is a rose, Amsterdam, NL, *2020*
 
-### 2019
+- ### 2019
+  - Platform Art-Zavod, Kyiv, UKR, *Be careful with this ax, Eugene*
 
-Platform Art-Zavod, Kyiv, UKR, *Be careful with this ax, Eugene*
+- ### 2018
+  - Contemporary Art Gallery Ў, Minsk, BY, ZBOR In Progress
 
-### 2018
+- ### 2017
+  - The Window, Laboratoire d'expérimentations artistiques en milieu urbain, Paris, FR, *939PIX*
+  - Re\:Voir, The Film Gallery, Paris, FR
+  - Centre of Contemporary Art, Torun, PL, *White-Red-White*
+  - Koszyki Hall, Warsaw, PL, *Camouflage*
+  - WRO17 Media Art Biennale, Renoma Department Store, Wroclaw, PL, *OS (Systemic Operations)*
+  - Georgian National Museum Tbilisi History Museum, Tbilisi, GE, *Space of Diffusion*
 
-Contemporary Art Gallery Ў, Minsk, BY, ZBOR In Progress
+- ### 2016
+  - Galerie im Körnerpark, Berlin, DE, *Ein Lichtarchiv aus der Zukunft. Illumination im Körnerpark*
+  - Galeria Arsenal, Bialystok, Poland, *Overcoming Chaos*
+  - Foundation IZOLYATSIA. Platform for Cultural Initiatives, Kiev, Ukraine, 'Zbor. Belarusian Art Movement'
 
-### 2017
+- ### 2015
+  - Gallery Arsenal, Bialystok, Poland, *Zbor. Constructing Archive*
+  - NCCA, Kaliningrad, Russia, *Space of Diffusion*
 
-The Window, Laboratoire d'expérimentations artistiques en milieu urbain, Paris, FR, *939PIX*
+- ### 2014
+  - Goethe-Institut/CCA, Minsk, Belarus, *Projector* an opera-lecture
+  - CCA, Minsk, Belarus, *Suma Sumarum*
+  - Gallery Ў, Minsk, Belarus, *Pixeltrance or Expressionistic Minimalism on a Subpixel Level* performance
 
-Re\:Voir, The Film Gallery, Paris, FR
+- ### 2013
+  - De Nederlandsche Bank, Amsterdam, Netherlands, *939 Picture Elements*.
+  - M4gastatelier , Amsterdam, Netherlands, screening.
+  - Punt WG, Amsterdam, Netherlands, *Total Recall*
 
-Centre of Contemporary Art, Torun, PL, *White-Red-White*
+- ### 2012
+  - Amstel 41 project space, Amsterdam, Netherlands, *-o-l-o-g-y*
+  - Rumyantsev-Paskevich Palace & Park Ensemble. Gomel, Belarus, *Palace Complex*
+  - The Elizabeth Foundation for the Arts, New York, USA, 'Sound Of Silence: Art During Dictatorship'
+  - Plant Horizont, Minsk, Belarus, *Zero Radius, Art Ontology Of The 00S*
 
-Koszyki Hall, Warsaw, PL, *Camouflage*
+- ### 2011
+  - Zachęta National Gallery of Art, Warsaw, Poland, *Opening The Door? Belarusian Art Today*
+  - Zeemanshuis, Amsterdam, Netherlands, *Betweenheavenandhighwater*
 
-WRO17 Media Art Biennale, Renoma Department Store, Wroclaw, PL, *OS (Systemic Operations)*
+- ### 2010
+  - Contemporary Art Centre, Vilnius, Lithuania, *Opening The Door? Belarusian Art Today*
+  - Mediations Biennale, Poznan, Poland, *Erased Walls*
+  - Museum Hof Van Busleyden, Mechelen, Belgium, "Who's Afraid Of The Museum?"
+  - Gallery Leonhard Ruethmueller Contemporary Art, Basel, Switzerland, *The Wall Is Alive*
 
-Georgian National Museum Tbilisi History Museum, Tbilisi, GE, *Space of Diffusion*
+- ### 2009
+  - MOCA Taipei, Taiwan, *The Simple Art Of Parody*
+  - Gallery Leonhard Ruethmueller Contemporary Art, Basel, Switzerland, *Your Favorites*
+  - Center of Arts Mystetskyi Arsenal, Kiev, Ukraine, *A Spires Embers*
 
-### 2016
+- ### 2008
+  - Gallery Podzemka, Minsk, Belarus, *Good-By*
+  - Gallery Arsenal, Bialystok, Poland, *Belarusian Perspectives*
+  - Temporary Art Space Für Fortgeschrittene, Berlin, Germany, *Good-By*
+  - Han Ji Yun Contemporary Space, Beijing, China, *RCS*
+  - Bereznitsky Gallery, Berlin, Germany, *Your Favorites*
 
-Galerie im Körnerpark, Berlin, DE, *Ein Lichtarchiv aus der Zukunft. Illumination im Körnerpark*
-
-Galeria Arsenal, Bialystok, Poland, *Overcoming Chaos*
-
-Foundation IZOLYATSIA. Platform for Cultural Initiatives, Kiev, Ukraine, 'Zbor. Belarusian Art Movement'
-
-### 2015
-
-Gallery Arsenal, Bialystok, Poland, *Zbor. Constructing Archive*
-
-NCCA, Kaliningrad, Russia, *Space of Diffusion*
-
-### 2014
-
-Goethe-Institut/CCA, Minsk, Belarus, *Projector* an opera-lecture
-
-CCA, Minsk, Belarus, *Suma Sumarum*
-
-Gallery Ў, Minsk, Belarus, *Pixeltrance or Expressionistic Minimalism on a Subpixel Level* performance
-
-### 2013
-
-De Nederlandsche Bank, Amsterdam, Netherlands, *939 Picture Elements*.
-
-M4gastatelier , Amsterdam, Netherlands, screening.
-
-Punt WG, Amsterdam, Netherlands, *Total Recall*
-
-### 2012
-
-Amstel 41 project space, Amsterdam, Netherlands, *-o-l-o-g-y*
-
-Rumyantsev-Paskevich Palace & Park Ensemble. Gomel, Belarus, *Palace Complex*
-
-The Elizabeth Foundation for the Arts, New York, USA, 'Sound Of Silence: Art During Dictatorship'
-
-Plant Horizont, Minsk, Belarus, *Zero Radius, Art Ontology Of The 00S*
-
-### 2011
-
-Zachęta National Gallery of Art, Warsaw, Poland, *Opening The Door? Belarusian Art Today*
-
-Zeemanshuis, Amsterdam, Netherlands, *Betweenheavenandhighwater*
-
-### 2010
-
-Contemporary Art Centre, Vilnius, Lithuania, *Opening The Door? Belarusian Art Today*
-
-Mediations Biennale, Poznan, Poland, *Erased Walls*
-
-Museum Hof Van Busleyden, Mechelen, Belgium, "Who's Afraid Of The Museum?"
-
-Gallery Leonhard Ruethmueller Contemporary Art, Basel, Switzerland, *The Wall Is Alive*
-
-### 2009
-
-MOCA Taipei, Taiwan, *The Simple Art Of Parody*
-
-Gallery Leonhard Ruethmueller Contemporary Art, Basel, Switzerland, *Your Favorites*
-
-Center of Arts Mystetskyi Arsenal, Kiev, Ukraine, *A Spires Embers*
-
-### 2008
-
-Gallery Podzemka, Minsk, Belarus, *Good-By*
-
-Gallery Arsenal, Bialystok, Poland, *Belarusian Perspectives*
-
-Temporary Art Space Für Fortgeschrittene, Berlin, Germany, *Good-By*
-
-Han Ji Yun Contemporary Space, Beijing, China, *RCS*
-
-Bereznitsky Gallery, Berlin, Germany, *Your Favorites*
-
-### 2007
-
-Bereznitsky Gallery & Gallery Boccara, New York, USA
-
-Altstadtherbst Kulturfestival, Düsseldorf, Germany
-
-Bereznitsky Gallery, Kiev, Ukraine
-
-Bereznitsky Gallery, Berlin, Germany, *Revision II*
+- ### 2007
+  - Bereznitsky Gallery & Gallery Boccara, New York, USA
+  - Altstadtherbst Kulturfestival, Düsseldorf, Germany
+  - Bereznitsky Gallery, Kiev, Ukraine
+  - Bereznitsky Gallery, Berlin, Germany, *Revision II*
 
 ### 2006
 

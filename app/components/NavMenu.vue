@@ -66,11 +66,11 @@ const scrollToStickyHeader = async (event: MouseEvent) => {
 <template>
   <div ref="navContainer" class="nav-container">
     <button class="toggle-nav" @mousedown="isNavOpen = !isNavOpen">
-      <Icon name="material-symbols:menu" />
+      <Icon name="material-symbols-light:menu" />
     </button>
     <nav ref="navLinks" class="nav-links" :class="{ open: isNavOpen }">
       <div class="sticky-header">
-        <NuxtLink to="/" class="logo">
+        <NuxtLink to="/cv" class="logo">
           <div>Andrei Dureika</div>
         </NuxtLink>
       </div>
@@ -127,10 +127,13 @@ const scrollToStickyHeader = async (event: MouseEvent) => {
 
   .toggle-nav {
     position: fixed;
-    top: 0;
+    top: 0.3rem;
     left: 0;
     display: none;
     background-color: var(--color-bg);
+    width: var(--size-base);
+    height: var(--size-base);
+    padding: 0;
   }
 
   .logo {

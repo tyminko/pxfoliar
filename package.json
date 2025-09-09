@@ -27,6 +27,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@iconify-json/material-symbols-light": "^1.2.34",
     "@types/probe-image-size": "^7.2.5"
   }
 }
