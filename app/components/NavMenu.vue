@@ -192,7 +192,7 @@ const scrollToStickyHeader = async (event: MouseEvent) => {
     padding-bottom: calc(var(--size-base) / 2);
     padding-top: var(--padding-sm);
 
-    > *:not(.sticky-header) {
+    & > :not(.sticky-header) {
       display: block;
       padding: var(--padding-base);
       padding-block: var(--padding-sm);
