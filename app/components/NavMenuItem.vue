@@ -26,19 +26,21 @@ const description = computed(() => (item.navigation as navigationMeta)?.descript
 </template>
 
 <style scoped>
-.nav-item-card {
-  position: relative;
-  display: block;
-  padding: var(--padding-base);
+@layer components {
+  .nav-item-card {
+    position: relative;
+    display: block;
+    padding: var(--padding-base);
 
-  .title-container {
-    overflow: hidden;
-  }
+    .title-container {
+      overflow: hidden;
+    }
 
-  .desc {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    .desc {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   }
 }
 </style>
