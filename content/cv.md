@@ -150,7 +150,7 @@ Lives and works in Amsterdam, NL
   - *Ostranenie 97* The International Electronic Media ForumDessau, Germany
   - *WRO 97* Media Art Biennale, Wroclav, Poland
 
-Selected Publications
+## Selected Publications
 
 - ### 2017
   - Festival des Cinémas Différents et Expérimentaux. Catalogue, Paris, France
