@@ -1,144 +1,78 @@
 ---
 credits: []
+title: ""
+seo:
+  title: Andrei Dureika CV
+  description: artist / curator
 ---
 
 tyminko(at)gmail.com
 
-1972
+### 1972
 
 Chernigov, Ukraine
 
 Lives and works in Amsterdam, NL
 
-Education
+## Education
 
-2000-05
+### 2000-05
 
 Academy of Media Arts, Cologne, Germany by Prof. David Larcher, Prof. Anthony Moore, Prof. Dr. Siegfried Zielinski
 
-1999
+### 1999
 
 Kunstakademie Düsseldorf, guest student at Gerhard Merz class
 
-1987-91
+### 1987-91
 
 Glebov Art College Minsk, Belarus
 
-2020
+### 2020
 
 Co-founder and editor of *Cultprotest.me*, а platform for visual resistance to dictatorship in Belarus.
 
-2017
+### 2017
 
 Co-founder of *pxFlux*, a platform for the exhibition, promotion, distribution and collection of time based, digital art.
 
-2005
+### 2005
 
 Co-founder of an art group *Revision (Your Favorites)*
 
-2004
+### 2004
 
 Nam June Paik Award – International Media Art Prize NRW, the Art Foundation NRW / Promotional Award
 
-1997
+### 1997
 
 Co-founder of an art group *Bolek & Lolek*
 
 Lectures and workshops at NYU Berlin, Gerrit Rietveld Academie Amsterdam, European Humanities University Vilnius, National Center of Contemporary Arts Minsk, Art Center "Ў" Minsk.
 
-::prose-table
-  :::prose-tbody
-    ::::prose-td
-    2025
-    ::::
-  
-    ::::prose-td
-    2025
-    ::::
-  :::
-::
+## Selected Exhibitions
 
-Selected Exhibitions
-
-2025
+### 2025
 
 Weltkunstzimmer, Dusseldorf, DE, *Charity Projekt EU UA* (co-curated antiwarcoalition space)
 
-2024
+- 2024
+- Free Belarus Museum, Warsaw, PL, *Ales Pushkin AFTERLIFE*
+- 2020
+  - Y gallery (Ў), Minsk, BY, *Touching Distance* 
+  - PuntWG, Amsterdam, NL, *Not LESS-MATERIAL* in frame of *A Matter of (In)digestions* festival
+  - Arti et Amicitiae, Amsterdam, NL, *BELARUS // ART OF RESISTANCE (+ co-curator)*
+  - ROZENSTRAAT – a rose is a rose is a rose, Amsterdam, NL, *2020*
 
-Free Belarus Museum, Warsaw, PL, *Ales Pushkin AFTERLIFE*
-
-Theatermuseum, Düsseldorf, DE, *PAVETRA / LUFT - Multimediale Performance*
-
-Karlsruher Schloss, Karlsruhe, DE, *Schlosslichtspiele. Sense Of Safety On The Antiwar Day* (+ co-curated) 
-
-YermilovCentre, Kharkiv, UA, and 28 other locations, *Sense Of Safety. expanded exhibition* (co-curated)
-
-FramerFramed, Amsterdam, NL, *Stream Art Day. A Hybrid event with THE VOID, UKRAiNATV & YermilovCentre* (co-curated, presented)
-
-ZKM, Karlsruhe, DE, *Sense Of Safety @ ZKM. Expanded exhibition.* (co-curated, video installation and works adaptation)
-
-Amerikahaus, München, DE, *Music For Belarus @ Minskxminga Video projection*
-
-2023
-
-Fashion Institute of Technology, New York, US, *Pattern, the Grid, and Other Systems* 
-
-Dymchuk Gallery, Kyiv, UA, *The International Coalition of cultural workers in solidarity with Ukraine* (co-curated)
-
-Weltkunstzimmer, Dusseldorf, DE, *𝖭̶𝖨̶𝖢̶𝖧̶𝖳̶ Unser Krieg* (co-curated)
-
-Maenad Collective, New York, US, *Sovereignty Reimagined* (co-curated)
-
-Messe Karlsruhe, Halle 1, Karlsruhe, DE, *antiwarcoalition.art @ Art Karlsruhe* (curated antiwarcoalition space)
-
-BEELD & GELUID, Hilversum, NL, *Are You Here With Us?* (co-curated)
-
-The Grey Space in the Middle, Den Haag, NL, *Music For Belarus concert. Multichannel video projection*
-
-2022
-
-Stationsplein, Enschede, NL, *antiwarcoalition.art Screening On Actifist Saturday @Gogbot Festival* (co-curated, presented) 
-
-Documenta Halle, Kassel, DE, *Documenta 15. antiwarcoalition.art One Day Exhibition: Non-Human Agents During The War* (co-curated)
-
-ZKM, Karlsruhe, DE, *antiwarcoalition.art @ ZKM One Week Screening* (co-curated)
-
-DOMIE, Poznan, PL, *𝐂𝐨𝐚𝐥𝐢𝐭𝐢𝐨𝐧 / Коаліцыя / 𝐊𝐨𝐚𝐥𝐢𝐜𝐣𝐚 / Кааліцыя* (curated antiwarcoalition space)
-
-Kino Rinia, Prishtina, XK, *Manifesta 14, To Appear Is To Matter. 2-day programme with the antiwarcoalition* (co-curated screening program)
-
-Goethe-Institut, Rome, IT, *ECF The European Pavilion in Rome. antiwarcoalition. Patriarchy And War* (co-curated antiwarcoalition space)
-
-2021
-
-The Grey Space in the Middle, Den Haag, NL, *Screams of the Silenced* 
-
-Studio 150 Bethlehemkerk, Amsterdam, NL, *Video projection for benefit concert Music For Belarus*
-
-Krakowskie Przedmieście 6 (glass display case), Lublin, PL, *Open City. War Art*
-
-Mystetskyi Arsenal, Kyiv, UKR, *EVERY DAY. ART. SOLIDARITY. RESISTANCE* (+ co-curator)
-
-2020
-
-Y gallery (Ў), Minsk, BY, *Touching Distance* 
-
-PuntWG, Amsterdam, NL, *Not LESS-MATERIAL* in frame of *A Matter of (In)digestions* festival
-
-Arti et Amicitiae, Amsterdam, NL, *BELARUS // ART OF RESISTANCE (+ co-curator)*
-
-ROZENSTRAAT – a rose is a rose is a rose, Amsterdam, NL, *2020*
-
-2019
+### 2019
 
 Platform Art-Zavod, Kyiv, UKR, *Be careful with this ax, Eugene*
 
-2018
+### 2018
 
 Contemporary Art Gallery Ў, Minsk, BY, ZBOR In Progress
 
-2017
+### 2017
 
 The Window, Laboratoire d'expérimentations artistiques en milieu urbain, Paris, FR, *939PIX*
 
@@ -152,7 +86,7 @@ WRO17 Media Art Biennale, Renoma Department Store, Wroclaw, PL, *OS (Systemic Op
 
 Georgian National Museum Tbilisi History Museum, Tbilisi, GE, *Space of Diffusion*
 
-2016
+### 2016
 
 Galerie im Körnerpark, Berlin, DE, *Ein Lichtarchiv aus der Zukunft. Illumination im Körnerpark*
 
@@ -160,13 +94,13 @@ Galeria Arsenal, Bialystok, Poland, *Overcoming Chaos*
 
 Foundation IZOLYATSIA. Platform for Cultural Initiatives, Kiev, Ukraine, 'Zbor. Belarusian Art Movement'
 
-2015
+### 2015
 
 Gallery Arsenal, Bialystok, Poland, *Zbor. Constructing Archive*
 
 NCCA, Kaliningrad, Russia, *Space of Diffusion*
 
-2014
+### 2014
 
 Goethe-Institut/CCA, Minsk, Belarus, *Projector* an opera-lecture
 
@@ -174,7 +108,7 @@ CCA, Minsk, Belarus, *Suma Sumarum*
 
 Gallery Ў, Minsk, Belarus, *Pixeltrance or Expressionistic Minimalism on a Subpixel Level* performance
 
-2013
+### 2013
 
 De Nederlandsche Bank, Amsterdam, Netherlands, *939 Picture Elements*.
 
@@ -182,7 +116,7 @@ M4gastatelier , Amsterdam, Netherlands, screening.
 
 Punt WG, Amsterdam, Netherlands, *Total Recall*
 
-2012
+### 2012
 
 Amstel 41 project space, Amsterdam, Netherlands, *-o-l-o-g-y*
 
@@ -192,13 +126,13 @@ The Elizabeth Foundation for the Arts, New York, USA, 'Sound Of Silence: Art Dur
 
 Plant Horizont, Minsk, Belarus, *Zero Radius, Art Ontology Of The 00S*
 
-2011
+### 2011
 
 Zachęta National Gallery of Art, Warsaw, Poland, *Opening The Door? Belarusian Art Today*
 
 Zeemanshuis, Amsterdam, Netherlands, *Betweenheavenandhighwater*
 
-2010
+### 2010
 
 Contemporary Art Centre, Vilnius, Lithuania, *Opening The Door? Belarusian Art Today*
 
@@ -208,7 +142,7 @@ Museum Hof Van Busleyden, Mechelen, Belgium, "Who's Afraid Of The Museum?"
 
 Gallery Leonhard Ruethmueller Contemporary Art, Basel, Switzerland, *The Wall Is Alive*
 
-2009
+### 2009
 
 MOCA Taipei, Taiwan, *The Simple Art Of Parody*
 
@@ -216,7 +150,7 @@ Gallery Leonhard Ruethmueller Contemporary Art, Basel, Switzerland, *Your Favori
 
 Center of Arts Mystetskyi Arsenal, Kiev, Ukraine, *A Spires Embers*
 
-2008
+### 2008
 
 Gallery Podzemka, Minsk, Belarus, *Good-By*
 
@@ -228,7 +162,7 @@ Han Ji Yun Contemporary Space, Beijing, China, *RCS*
 
 Bereznitsky Gallery, Berlin, Germany, *Your Favorites*
 
-2007
+### 2007
 
 Bereznitsky Gallery & Gallery Boccara, New York, USA
 
@@ -238,63 +172,63 @@ Bereznitsky Gallery, Kiev, Ukraine
 
 Bereznitsky Gallery, Berlin, Germany, *Revision II*
 
-2006
+### 2006
 
 Museum of Applied Art, Cologne, Germany, *Beguiling Orpheus* live opera performance
 
-2005-06
+### 2005-06
 
 gallery HALLE 6, Düsseldorf, Germany, *Co-Operative Experience*
 
-2005
+### 2005
 
 BBK Kunst-Forum, Düsseldorf, Germany, 'Revision Fünf weißrussische Künstler und Russische Avantgarde'
 
-2004
+### 2004
 
 Kunst- und Ausstellungshalle der Bundesrepublik Deutschland, Bonn, *The Cosmic Egg* parallel programme for the exhibition *Die Thraker*
 
 17th European Media Art Festival *Gotoandstop*, DGB-Haus, Osnabrueck, Germany
 
-2003
+### 2003
 
 Facade video projections GigaCenter, Rudolfplatz, Köln, Germany, *5zu1*
 
-2002
+### 2002
 
 Volksgarten Orangerie, Cologne, Germany, *Orfeo Ed Euridice (v.2.0)* live opera/video performance
 
-2001
+### 2001
 
 Center for Curatorial Studies at Bard College, NY, USA, *Beyond The Sentence*
 
-1999
+### 1999
 
 Spektakulum, Dusseldorf, Germany, *Echo Viruses & Lilian Maria* concert - video projection
 
-1998
+### 1998
 
 Academy of Art, Munchen, Germany, *Echo Viruses* concert - video installation
 
-1997
+### 1997
 
 gallery "Sixth Line", Minsk, Belarus, *Todesschaft*
 
-1995
+### 1995
 
 Belarussian Union of Friendship and Cultural Connections with Foreign Countries, Minsk, Belarus, *The House Of People's Friendship*
 
-1994
+### 1994
 
 Republican Gallery of Artists Union, Minsk, Belarus, *Liebschaft*
 
-Festivals
+## Festivals
 
-2020
+### 2020
 
 *A Matter of (In)digestions* Art Festival, Amsterdam, NL.
 
-2017
+### 2017
 
 *Festival des Cinémas Différents et Expérimentaux*, Paris, France (jury member)
 
@@ -302,13 +236,13 @@ Festivals
 
 *WRO 2017* Media Art Biennale, *Draft Systems*, Wroclav, Poland
 
-2003
+### 2003
 
 The 1st Transchina Video Art Festival, Beijing, Dalian, Shenyang, Haerbin, Shijiazhuang and Guangzhou, China
 
 *Art in General's* 5th Annual Video MarathonNew York, USA
 
-2002
+### 2002
 
 *Video Zone*, the 1st International Video Art Biennial in IsraelTel Aviv, Israel
 
