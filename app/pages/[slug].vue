@@ -10,7 +10,7 @@ const { data: page } = await useAsyncData(slug, () =>
 </script>
 
 <template>
-  <PageContent :item="page">
+  <PageContent :item="page" :class="slug">
     <template #header-desc>
       <div class="desc">{{ page?.description }}</div>
     </template>
@@ -18,7 +18,7 @@ const { data: page } = await useAsyncData(slug, () =>
 </template>
 
 <style>
-[data-content-id="pages/cv.md"] {
+.project-page.cv {
   h2, h3 {
     font-size: var(--font-size-body);
     font-variation-settings: "wght" 700;
