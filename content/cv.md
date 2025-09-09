@@ -1,11 +1,12 @@
 ---
 credits: []
-title: "Andrei Dureika CV"
+title: Andrei Dureika CV
 description: artist / curator / webdeveloper
 seo:
   title: Andrei Dureika CV
   description: artist / curator
 ---
+
 - ### 1972
   - Chernigov, Ukraine
 
