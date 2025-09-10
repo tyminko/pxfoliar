@@ -12,13 +12,6 @@ credits:
   - role: assistent
     name: Arkady Bronstein
 ---
-
-::work-info
-# Work Title
-
-technic and material | years too | some deteiles
-::
-
 ::img-caption
 #img
 ![whats-app-image-2025-08-14-at-21.54.55.jpeg](/whats-app-image-2025-08-14-at-21.54.55.jpeg)

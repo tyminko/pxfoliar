@@ -18,7 +18,25 @@ const { data: page } = await useAsyncData(slug, () =>
 </template>
 
 <style>
-.project-page.cv {
+.page-wrapper.cv {
+  .content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--padding-base);
+
+    & > * {
+      grid-column: 1 / -1;
+      &:is(ul, ol) {
+        display: grid;
+        grid-template-columns: subgrid;
+        gap: var(--padding-base);
+      }
+    }
+    & > :is(h2, h3) {
+      grid-column: 2 / -1;
+      margin-block: var(--padding-base);
+    }
+  }
   h2, h3 {
     font-size: var(--font-size-body);
     font-variation-settings: "wght" 700;
@@ -30,16 +48,27 @@ const { data: page } = await useAsyncData(slug, () =>
     font-size: var(--font-size-h5);
   }
 
-  li:has( > h3 + ul) {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: var(--padding-base);
-    margin-bottom: var(--padding-base);
+  h2, h3, p {
+    margin: 0;
+  }
 
+  li:has( > h3 + ul) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: var(--padding-base);
+
+    h3 {
+      justify-self: end;
+    }
 
     li {
       list-style: none;
-      margin-bottom: var(--padding-sm);
+      max-width: 95ch;
+      text-wrap: balance;
+      &:not(:last-child) {
+        margin-bottom: var(--padding-sm);
+      }
     }
   }
 }

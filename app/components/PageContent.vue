@@ -36,13 +36,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="project-page">
+  <div class="page-wrapper">
     <header ref="headerEl">
       <h1>{{ item?.title }}</h1>
       <slot name="header-desc" />
     </header>
     <slot />
-    <ContentRenderer v-if="item" :value="item" />
+    <ContentRenderer v-if="item" :value="item" class="content" />
     <div v-else>
       <h1>Page Not Found</h1>
     </div>

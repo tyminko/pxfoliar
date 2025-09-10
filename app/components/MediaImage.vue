@@ -210,7 +210,7 @@ function checkImageLoaded() {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
+    /* opacity: 0; */
     z-index: 1;
     transition: opacity var(--trans-dur) ease-in-out;
   }
