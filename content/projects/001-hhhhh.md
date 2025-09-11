@@ -1,22 +1,22 @@
 ---
 credits: []
 draft: false
-title: AD DA
-description: Privet internet!
+title: Lux et Umbra
+description: Opus digitalis experimentalis
 ---
 
-![](/24-11-06-img-10047.jpg "caption sfdsdfsdf sdfsdf sd fsd fsds")
+![](/24-11-06-img-10047.jpg "Compositio lucis et umbrae in spatio digitali")
 
-***Lorem ipsum*** (/ˌlɔː.rəm ˈɪp.səm/ *LOR-əm IP-səm*) is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting.
+***Ars digitalis*** (/ˌɑrs.diː.ɡi.ˈtaː.lis/) est forma artis contemporaneae quae technologiam digitalem ut medium primarium utilisat. Haec ars nova fronteiras traditionalis artis transcendit, permittens artificibus spatium infinitum explorationis et expressionis.
 
-*Lorem ipsum* is typically a corrupted version of *De finibus bonorum et malorum*, a 1st-century BC **text** by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words are the truncation of [dolorem]() *ipsum* ("pain itself").
+*Ars digitalis* fundamentaliter differt ab artibus traditionalibus in eo quod materiam virtualem tractat. In hoc opere, **pixels** et codices sunt tamquam pigmenta et pennelli, creantes realitates novas quae solum in mundo digitali existere possunt.
 
-Versions of the *Lorem ipsum* text have been used in typesetting since the 1960s, when advertisements for Letraset transfer sheets popularized it.\[1] *Lorem ipsum* was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted *Lorem ipsum*,\[2] as have many LaTeX packages,\[3]\[4]\[5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.
+Opus hoc investigat limites inter realitatum physicam et digitalem, explorans quomodo perceptio nostra spatii et temporis per technologiam transformatur. Elementum centrale est lux digitalis, quae non subiecta est legibus physicis traditionalis lucis, sed potius regulis programmationis et algorithimis computationalibus.
 
 ::img-caption
 #img
 ![museumplein.jpeg](/museumplein.jpeg)
 
 #caption
-museumplijn amsterdam ©AD
+Spatium Digitalis ©Aurelius Valerian
 ::

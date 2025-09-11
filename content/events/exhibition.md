@@ -1,27 +1,27 @@
 ---
-title: Ales Pushkin AFTERLIFE
-description: Free Belarus Museum, Warsaw, PL
+title: Memoria Vitae Aeternae
+description: Museum Libertatis, Urbs Magna, Terra
 startDate: 2024-08-06T00:00:00.000Z
 endDate: 2024-08-31T00:00:00.000Z
 image:
   src: /pu-exhibition.jpg
 credits:
-  - role: author / curator
-    name: Andrei Dureika
-  - role: participants
-    name: Aleś Puškin, Rufina Bazlova (Stitchit), Alexander Vasyukovich, Andrei
-      Dureyka, Ijalanta Kiliyani, Yanak Kouzel, Maxim Tyminko, Antoś Cieleżnik,
-      Yana Shostak, Roman Schell.
+  - role: auctor / curator
+    name: Aurelius Valerian
+  - role: participantes
+    name: Marcus Aurelius, Claudia Severa (Textura), Quintus Fabius, Gaius
+      Valerius, Julia Prisca, Lucius Seneca, Titus Livius, Publius Ovidius,
+      Cornelia Gracchus, Severus Augustus.
 ---
 
-![Exhibition poster](/pu-exhibition.jpg "Exhibition poster ©AD")
+![Exhibition poster](/pu-exhibition.jpg "Tabula Exhibitionis ©AV")
 
-The exhibition "Ales Pushkin. AFTERLIFE" will open on August 6 at 19:00 at the Museum of Free Belarus in Warsaw.
+Exhibitio "Memoria Vitae Aeternae" die sexto mensis Augusti hora septima post meridiem in Museo Libertatis urbis Magnae aperietur.
 
-This date is not accidental: on the artist's birthday, despite his violent death, which occurred a year ago in a Hrodna prison.
+Dies non fortuito electa est: in die natali artificis, non obstante eius morte violenta, quae anno praeterito in carcere Urbis Antiquae accidit.
 
-The main concept of the exhibition is based on the actions and performances of Aleś Puškin, which he conducted in public spaces since 1989. These actions portray him as a radical artist-activist working within cultural, social, and political contexts.
+Conceptus principalis exhibitionis fundatur in actionibus et performationibus Marci Aurelii, quas in spatiis publicis ab anno MCMLXXXIX perfecit. Hae actiones eum ut artificem radicalem-activistam in contextibus culturalibus, socialibus et politicis operantem demonstrant.
 
-Several key themes have been selected for the exhibition, highlighting the author's diverse art and remaining relevant in today's historical moment: Freedom Day, Gift for the President, Saints and Holidays, Belarusian Resistance, Opposition to War.
+Themata principalia pro exhibitione selecta sunt, quae artem variam auctoris illustrant et momentum hodiernum servant: Dies Libertatis, Donum Praesidi, Sancti et Dies Festi, Resistentia Civilis, Oppositio Bello.
 
-The exhibition employs the installation method of the artist himself and continues his presence in space. Most of the exhibits are created based on media artifacts, documents, and original video works from the artist's archive, friends, and colleagues. The exhibition also integrates original works from artists, photographers, and filmmakers who collaborated with Aleś and whose work is conceptually related to his ideas. This adds more insight into the atmosphere of the time and continues his artistic legacy.
+Exhibitio methodum installationis ipsius artificis adhibet et praesentiam eius in spatio continuat. Plurima exhibita ex artifactis mediaticis, documentis, et operibus originalibus ex archivo artificis, amicorum et collegarum creantur. Exhibitio etiam opera originalia artificum, photographorum et cinematographorum integrat, qui cum Marco collaboraverunt et quorum opera conceptualiter cum eius ideis conectuntur. Hoc profundiorem intellectum atmosphaerae temporis addit et hereditatem eius artisticam continuat.

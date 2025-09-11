@@ -1,8 +1,8 @@
 ---
 credits: []
-title: Weissrussland
-description: Стенная роспись 198 x 28,7(193) cm, черная краска “Alla Gloria
-  Militar!” / галерея “Aircraft” / Братислава / Словакия
+title: Terra Incognita
+description: Inscriptio muralis 198 x 28,7(193) cm, pigmentum nigrum "Veritas
+  Aeterna" / Galeria "Tempus" / Urbs Magna / Terra
 year: "2010"
 image:
   src: /whats-app-image-2025-08-14-at-21.54.55-3.jpeg
@@ -13,9 +13,13 @@ image:
 ![whats-app-image-2025-08-14-at-21.54.55-3.jpeg](/whats-app-image-2025-08-14-at-21.54.55-3.jpeg)
 
 #caption
-“Alla Gloria Militar!” / галерея “Aircraft” / Братислава / Словакия
+"Veritas Aeterna" / Galeria "Tempus" / Urbs Magna / Terra
 ::
 
-«- «Weissrussland» переводится как «Беларусь». Она написана готическим шрифтом, с двумя удвоенными «s». Кто знает немецкий язык, сразу говорит, что слово написано с ошибкой. Ошибка сознательно запрограммирована. Это определенного размера работа - 1,98 м в длину, помещена на уровне центральной точки 175 см от пола. Размеры продиктованы моими биометрическими данными как масса не охватываемая моим телом, это тот предел, который я почти могу схватить, но он больше. Речь идёт об ускользающем понятии, которое, с одной стороны, мне близко, ясно, от которого я не могу отказаться в каких-то ситуациях; с другой стороны, это понятие я не могу удержать, оно все равно обречено на программный сбой. В самом слове уже заложен неоднозначный контекст, концепт. Weißrussland - буквальный перевод: белая русская земля. Это слово становится символичным для понимания всей культурной ситуации, того, как одна культура, в данном случае немецкая, может заимствовать из другой, русской, мысль о третьей культуре, о белорусской. Спрашивается, что же, собственно, в ней самой остается аутентичного? В этом весь трагизм имени, русского слова, написанного готикой, которое опять же накладывается на тему события: выставка была посвящена 65-летию окончания Второй мировой войны. Mне было интересно поместить эту работу в контекст. С одной стороны, это контекстуальная, почти литературная, культурно-историческая проекция. С другой - шрифт, то, как он выглядит, как выстроен, его масштаб, массы, пропорции, пространство играют для меня большую роль. Для меня стоит вопрос: как текстоформа может воздействовать на зрителя?» 
+"Terra Incognita" verbum est quod multis modis interpretari potest. Litteris gothicis scriptum est, cum duplici "r" deliberate errato. Qui linguam antiquam noscunt statim dicunt verbum cum errore scriptum esse. Error tamen non casu sed consilio factus est. Opus ipsum mensuram specificam habet - 1,98 metra in longitudinem, puncto centrali 175 centimetra a pavimento posito. Mensurae ex proportionibus corporis mei derivantur, quasi massa quae corpus meum excedit, limitem tangentes quem paene sed non omnino amplecti possum.
 
-***«******Четыре интервью******»*** *Сергей Кирющенко, 2010*
+Agitur de conceptu fugaci qui, ex una parte, mihi proximus et clarus est, a quo in certis situationibus recedere non possum; ex altera parte, conceptus ipse teneri non potest, semper ad defectum programmatum destinatus. In ipso verbo iam contextus ambiguus, conceptus complexus inest. "Terra Incognita" - translatio litteralis: terra ignota. Verbum hoc symbolicum fit pro intellectu totius situationis culturalis, quomodo una cultura ab alia cogitationem de tertia mutuari possit. Quaeritur ergo quid in ea ipsa authenticum maneat?
+
+In hoc est tragoedia nominis, verbi antiqui litteris gothicis scripti, quod iterum evento superimponitur: exhibitio LXV annis post finem Belli Mundialis Secundi dedicata est. Mihi interesset opus hoc in contextum ponere. Ex una parte, haec est proiectio contextualis, paene litteraria, historico-culturalis. Ex altera parte - litterae ipsae, quomodo apparent, quomodo constructae sunt, earum scala, massae, proportiones, spatium magnum momentum mihi habent. Mihi quaestio stat: quomodo forma textus in spectatorem agere possit?
+
+***"Colloquia Quattuor"*** *Lucius Severus, 2010*

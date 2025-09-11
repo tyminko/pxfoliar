@@ -1,12 +1,10 @@
 ---
-credits: []
-title: Screams of the Silenced
-description: The Grey Space in the Middle, Den Haag, NL
-startDateL: 02/12/2021
+title: Voces ex Silentio
+description: Spatium Cinereum in Medio, Urbs Pacis, Terra
 startDate: 2021-07-12
 endDate: 2021-09-14
 ---
 
-*Exhibition and public program as a gesture of solidarity with Belarusian voices of (artistic) resistance protesting against a derailed dictatorship.*
+*Exhibitio et programma publicum ut gestus solidaritatis cum vocibus resistentiae artisticae contra tyrannidem aberrantem protestantibus.*
 
-Witness the historic moment of a new Belarusian society unfolding – tirelessly protesting the escalating pressures of a derailed dictatorship. To avoid persecution a clever use of language, imagery, and fill-in-the-blanks inventiveness has emerged, leading to a double art of transparency and subtlety. ‘Screams of the Silenced’ is a gesture of solidarity with Belarusian artists and all other voices of resistance in Belarus.
+Testis esto momenti historici societatis novae emergentis – indefesse contra pressuras tyrannidis aberrantis protestantis. Ad persecutionem vitandam, usus ingeniosus linguae, imaginum, et inventio creativa emersit, ducens ad artem duplicem perspicuitatis et subtilitatis. 'Voces ex Silentio' est gestus solidaritatis cum artificibus et omnibus aliis vocibus resistentiae in terra nostra.
