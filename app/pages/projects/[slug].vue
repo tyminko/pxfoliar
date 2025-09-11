@@ -12,7 +12,11 @@ const { data: project } = await useAsyncData(`project-${slug}`, () =>
 <template>
   <PageContent :item="project">
     <template #header-desc>
-      <div class="desc">{{ project?.year }} <span>•</span> {{ project?.description }}</div>
+      <div v-if="project?.year || project?.description" class="desc">
+        {{ project?.year }}
+        <span v-if="project?.year && project?.description">•</span>
+        {{ project?.description }}
+      </div>
     </template>
   </PageContent>
 </template>

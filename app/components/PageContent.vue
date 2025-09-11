@@ -50,6 +50,9 @@ useSeoMeta({
 </template>
 
 <style scoped>
+.page-wrapper {
+  padding-bottom: var(--size-base);
+}
 header {
   --_pad-x: var(--content-inline-margin, var(--padding-sm));
   position: sticky;
