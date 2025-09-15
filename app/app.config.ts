@@ -1,1 +1,5 @@
-export default defineAppConfig({})
+export default defineAppConfig({
+  global: {
+    name: "Andrei Dureika"
+  }
+})
