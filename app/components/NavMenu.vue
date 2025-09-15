@@ -71,7 +71,7 @@ const scrollToStickyHeader = async (event: MouseEvent) => {
     <nav ref="navLinks" class="nav-links" :class="{ open: isNavOpen }">
       <div class="sticky-header">
         <NuxtLink to="/cv" class="logo">
-          <div>Andrei Dureika</div>
+          <div>{{ useAppConfig().global.name }}</div>
         </NuxtLink>
       </div>
       <div class="sticky-header">
