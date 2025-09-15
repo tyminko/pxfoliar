@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import type { ProjectsCollectionItem, EventsCollectionItem } from '@nuxt/content'
 const route = useRoute()
-const { data: projects } = await useAsyncData<ProjectsCollectionItem[]>('all-projects', () =>
-  queryCollection('projects')
-    .where('path', 'LIKE', '/projects/%')
-    .all()
+const { data: projects } = await useAsyncData<ProjectsCollectionItem[]>(
+  'all-projects',
+  () => queryCollection('projects').all()
 )
-const { data: events } = await useAsyncData<EventsCollectionItem[]>('all-events', () =>
-  queryCollection('events')
-    .where('path', 'LIKE', '/events/%')
-    .all()
+const { data: events } = await useAsyncData<EventsCollectionItem[]>(
+  'all-events',
+  () => queryCollection('events').all()
 )
 const sortedProjects = computed<ProjectsCollectionItem[]>(() => {
   return [...(projects.value ?? [])].sort((a, b) => {
