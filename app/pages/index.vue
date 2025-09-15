@@ -11,9 +11,11 @@ if (!projectsRef?.value || projectsRef.value.length === 0) {
   projectsRef = data
 }
 
-const firstPath = projectsRef?.value?.[0]?.path
-if (typeof firstPath === 'string' && firstPath.length > 0) {
-  await navigateTo(firstPath, { replace: true, redirectCode: 302 })
+if (import.meta.client) {
+  const firstPath = projectsRef?.value?.[0]?.path
+  if (typeof firstPath === 'string' && firstPath.length > 0) {
+    await navigateTo(firstPath, { replace: true })
+  }
 }
 </script>
 
