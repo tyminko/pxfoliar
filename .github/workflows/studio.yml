@@ -3,12 +3,7 @@ name: studio-nuxt-build
 run-name: studio nuxt build
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches:
-      - 'main'
-
-  # Allows you to run this workflow manually from the Actions tab
+  # Manual runs only. Cloudflare Pages will handle builds on push.
   workflow_dispatch:
 
 # Add write workflow permissions
