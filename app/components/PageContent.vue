@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { ProjectsCollectionItem, EventsCollectionItem } from '@nuxt/content'
+import type { ProjectsCollectionItem, EventsCollectionItem, PagesCollectionItem } from '@nuxt/content'
 
 const { item = null } = defineProps<{
-  item?: ProjectsCollectionItem | EventsCollectionItem | null
+  item?: ProjectsCollectionItem | EventsCollectionItem | PagesCollectionItem | null
 }>()
 const headerEl = ref<HTMLElement | null>(null)
 let headerResizeObserver: ResizeObserver | null = null

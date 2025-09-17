@@ -1,6 +1,5 @@
 ---
 credits: []
-title: Aurelius Valerian
 description: artifex / curator / programmator interretialis
 seo:
   title: Aurelius Valerian CV

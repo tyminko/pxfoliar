@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { PagesCollectionItem } from '@nuxt/content'
+
 const route = useRoute()
 const slug = route.params.slug as string
 
@@ -7,10 +9,20 @@ const { data: page } = await useAsyncData(slug, () =>
     .where('path', '=', `/${slug}`)
     .first()
 )
+const pageData = computed(() => {
+  if (slug !== 'cv') { return page.value }
+  const title = page.value?.title?.toLocaleLowerCase() !== slug
+    ? page.value?.title
+    : useAppConfig().global.name ?? slug
+  return {
+    ...page.value,
+    title,
+  } as PagesCollectionItem
+})
 </script>
 
 <template>
-  <PageContent :item="page" :class="slug">
+  <PageContent :item="pageData" :class="slug">
     <template #header-desc>
       <div class="desc">{{ page?.description }}</div>
     </template>
