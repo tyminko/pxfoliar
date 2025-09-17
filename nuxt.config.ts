@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   app: {
+    baseURL: process.env.DEPLOY_TARGET === 'github'
+      ? (process.env.GITHUB_PAGES_BASE_PATH || '/')
+      : '/',
     head: {
       style: [
         {
@@ -47,7 +50,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'github_pages'
+    preset: process.env.DEPLOY_TARGET === 'github' ? 'github_pages' : undefined
   },
 
   hooks: {

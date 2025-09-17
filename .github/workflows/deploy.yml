@@ -1,0 +1,60 @@
+name: Build and Deploy (Cloudflare Pages or GitHub Pages)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+env:
+  NODE_VERSION: 20
+  # Set in repo Settings → Variables → Actions
+  DEPLOY_TARGET: ${{ vars.DEPLOY_TARGET }} # 'cloudflare' or 'github'
+  # Only used when DEPLOY_TARGET == 'github'
+  GITHUB_PAGES_BASE_PATH: ${{ vars.GITHUB_PAGES_BASE_PATH }} # e.g. '/pxfoliar/'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    if: ${{ vars.DEPLOY_TARGET == 'github' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Generate site
+        run: npm run generate
+        env:
+          DEPLOY_TARGET: ${{ env.DEPLOY_TARGET }}
+          GITHUB_PAGES_BASE_PATH: ${{ env.GITHUB_PAGES_BASE_PATH }}
+          IMAGEKIT_URL_ENDPOINT: ${{ secrets.IMAGEKIT_URL_ENDPOINT }}
+          NUXT_TELEMETRY_DISABLED: 1
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy-github-pages:
+    if: ${{ vars.DEPLOY_TARGET == 'github' }}
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
